@@ -1,0 +1,62 @@
+export type ScenarioChoice = {
+  id: string;
+  label: string;
+  outcome: string;
+  riskNote: string;
+  correct: boolean;
+};
+
+export type ScenarioStep = {
+  id: string;
+  title: string;
+  prompt: string;
+  choices: ScenarioChoice[];
+  newInformation?: string;
+};
+
+export type ScenarioRunChoice = {
+  stepId: string;
+  choiceId: string;
+  correct: boolean;
+};
+
+export type ScenarioRun = {
+  id: string;
+  scenarioId: string;
+  startedAtIso: string;
+  completedAtIso: string;
+  stepChoices: ScenarioRunChoice[];
+  noteRubricChecks?: Record<string, boolean>;
+  noteScore?: number;
+  revisitDueDateIso?: string;
+  recommendedModuleId?: string;
+  weakTopic?: string;
+  completed: boolean;
+};
+
+export type MissionType = 
+  | 'Triage Mission' 
+  | 'Ticket Note Mission' 
+  | 'Escalation Mission' 
+  | 'User Communication Mission' 
+  | 'Security Judgement Mission' 
+  | 'Troubleshooting Sequence Mission';
+
+export type Scenario = {
+  id: string;
+  title: string;
+  summary: string;
+  missionType?: MissionType;
+  estimatedMinutes: number;
+  initialReport: string;
+  contextBullets: string[];
+  careerTags?: string[];
+  contextTags?: string[];
+  certificationTags?: string[];
+  transferableSkills?: string[];
+  steps: ScenarioStep[];
+  idealTroubleshootingPath: string[];
+  escalationPoint: string;
+  riskNote: string;
+  ticketNoteExample: string;
+};
