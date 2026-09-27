@@ -1,0 +1,37 @@
+name: Deploy controlled Vercel production
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/deploy-controlled-vercel.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Require Vercel token
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::error::VERCEL_TOKEN is not configured in this repository or organisation"
+            exit 1
+          fi
+      - name: Link controlled project
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          npx --yes vercel@latest project add dcs-professional-development-offline --scope joshualparris-projects --token "$VERCEL_TOKEN" || true
+          npx --yes vercel@latest link --yes --project dcs-professional-development-offline --scope joshualparris-projects --token "$VERCEL_TOKEN"
+      - name: Deploy production
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          npx --yes vercel@latest deploy --prod --yes --scope joshualparris-projects --token "$VERCEL_TOKEN" | tee /tmp/vercel-url.txt
+          test -s /tmp/vercel-url.txt
