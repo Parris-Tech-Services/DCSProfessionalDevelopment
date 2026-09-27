@@ -1,0 +1,48 @@
+name: Resolve DCS publisher feeds
+on:
+  push:
+    branches: [main, deploy-ready]
+    paths:
+      - '.github/workflows/resolve-dcs-publisher-feeds.yml'
+permissions:
+  contents: write
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Resolve M365.FM episodes from publisher RSS
+        run: |
+          python3 - <<'PY'
+          import json,re,urllib.request,xml.etree.ElementTree as ET
+          from pathlib import Path
+          report=json.loads(Path('research/offline-podcast-sources.json').read_text())
+          feed='https://www.spreaker.com/show/6704921/episodes/feed'
+          root=ET.fromstring(urllib.request.urlopen(urllib.request.Request(feed,headers={'User-Agent':'DCS-PD-offline-audit/1.0'}),timeout=30).read())
+          items=[]
+          for it in root.findall('.//item'):
+            t=(it.findtext('title') or '').strip(); enc=it.find('enclosure')
+            if enc is not None and enc.attrib.get('url'): items.append({'title':t,'audio':enc.attrib['url'],'length':enc.attrib.get('length'),'type':enc.attrib.get('type')})
+          def norm(s): return re.sub(r'[^a-z0-9]+',' ',(s or '').lower()).strip()
+          def toks(s): return set(norm(s).split())
+          def score(a,b):
+            A,B=toks(a),toks(b); return len(A&B)/max(1,max(len(A),len(B)))
+          resolved={}
+          for e in report['results']:
+            if e['show']!='M365.FM': continue
+            best=max(items,key=lambda x:score(e['title'],x['title'])); s=score(e['title'],best['title'])
+            if s>=.25 or norm(e['title']) in norm(best['title']):
+              resolved[e['id']]={**e,'matchedTitle':best['title'],'audio':best['audio'],'feed':feed,'feedTitleScore':round(s,3),'length':best['length'],'mime':best['type']}
+              print('RESOLVED',json.dumps({'title':e['title'],'match':best['title'],'score':round(s,3),'audio':best['audio']},ensure_ascii=False))
+            else: print('UNRESOLVED',json.dumps({'title':e['title'],'best':best['title'],'score':round(s,3)},ensure_ascii=False))
+          Path('research/m365-offline-podcast-sources.json').write_text(json.dumps({'resolvedCount':len(resolved),'map':resolved},indent=2,ensure_ascii=False))
+          print('SUMMARY',len(resolved))
+          PY
+      - name: Commit map
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/m365-offline-podcast-sources.json
+          git diff --cached --quiet && exit 0
+          git commit -m "research: resolve M365 podcast episodes from publisher feed"
+          git push
