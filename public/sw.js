@@ -1,4 +1,5 @@
 const CACHE_NAME = 'supportops-app-shell-v1';
+const AUDIO_CACHE = 'dcs-pd-podcast-audio-v1';
 const APP_SHELL_URLS = [
   '/',
   '/modules',
@@ -25,7 +26,7 @@ self.addEventListener('activate', (event) => {
     caches
       .keys()
       .then((cacheNames) =>
-        Promise.all(cacheNames.filter((cacheName) => cacheName !== CACHE_NAME).map((cacheName) => caches.delete(cacheName)))
+        Promise.all(cacheNames.filter((cacheName) => cacheName !== CACHE_NAME && cacheName !== AUDIO_CACHE).map((cacheName) => caches.delete(cacheName)))
       )
       .then(() => self.clients.claim())
   );
@@ -35,6 +36,16 @@ self.addEventListener('fetch', (event) => {
   const request = event.request;
 
   if (request.method !== 'GET') {
+    return;
+  }
+
+  if (request.destination === 'audio') {
+    event.respondWith(
+      caches
+        .open(AUDIO_CACHE)
+        .then((cache) => cache.match(request, { ignoreVary: true }))
+        .then((cachedResponse) => cachedResponse || fetch(request))
+    );
     return;
   }
 
