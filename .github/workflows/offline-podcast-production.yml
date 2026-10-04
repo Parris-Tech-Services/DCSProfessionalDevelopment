@@ -1,14 +1,6 @@
 name: DCS production offline podcasts
 on:
   workflow_dispatch:
-  push:
-    branches: [deploy-ready, main]
-    paths:
-      - 'src/data/itPodcastEpisodes.ts'
-      - 'src/components/podcast/IndependentPodcastPlayer.tsx'
-      - 'public/sw.js'
-      - 'tools/offline-podcast-production.mjs'
-      - '.github/workflows/offline-podcast-production.yml'
 permissions:
   contents: read
 concurrency:
@@ -68,3 +60,4 @@ jobs:
         with:
           name: dcs-offline-evidence-${{ strategy.job-index }}
           path: offline-evidence/
+          retention-days: 1
