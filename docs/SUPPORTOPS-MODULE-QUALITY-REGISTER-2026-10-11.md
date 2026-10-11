@@ -4,7 +4,7 @@ Source reviewed: `src/data/modules.ts`, `messerCore2Modules.ts`, `dcsWorkflowMod
 
 ## 128 module IDs (74 generated revision modules)
 
-The 74 Core 2 topic modules now contain **topic-specific reading notes**, but remain **orientation only**: most graded items are repeated decision formats, and there are not three reviewed subject-specific worked cases or observed competence rubrics per topic. The previously repeated unrelated APIPA and HDMI labs were removed from their generator. That removes misleading training evidence but does not turn these items into mastery-ready modules.
+The 74 Core 2 topic modules now contain **topic-specific reading notes**, but remain **orientation only**: the first two graded questions now require subject-specific two-hypothesis reasoning and a technical misconception check, but the other questions retain template elements and there are not three reviewed subject-specific worked cases or observed competence rubrics per topic. The previously repeated unrelated APIPA and HDMI labs were removed from their generator. That removes misleading training evidence but does not turn these items into mastery-ready modules.
 
 32 core modules, 4 general Core 2 modules, 16 DCS workflow modules and 2 independent specialised modules are conservatively classified as developing pending a per-module pedagogy review.
 
@@ -141,7 +141,7 @@ The 74 Core 2 topic modules now contain **topic-specific reading notes**, but re
 
 ## Priority findings
 
-1. **Systemic issue**: repeated generic assessment keys still need individual expert authoring for 74 topic modules. The subject-specific notes and absence of the unrelated repeated labs are an interim accuracy improvement, not completion.
+1. **Systemic issue**: 148 trivial/repeated question prompts have been replaced with more demanding source-grounded technical explanations and disconfirmable hypotheses across 74 modules. The remaining question formats still need expert review and independent grading; 74 modules remain orientation-only. A Vitest regression guard now checks the distinct notes and absence of repeated APIPA/HDMI labs.
 2. **Multimedia**: linking to the main Professor Messer A+ 220-1202 course does not mean each generated lesson has a direct video at the exact subject or an audio alternative.
 3. **Mastery**: no source-only claim of mastery-ready or operational authorisation is justified. Use reviewed fresh-case evidence and supervisor feedback.
 4. **Duplication**: reconcile overlapping topics with DCSPD and AvancePD. See [shared rubric](LEARNING-QUALITY-STANDARD.md).
