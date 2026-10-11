@@ -330,42 +330,34 @@ function createCore2TopicModule(topic: string, group: Core2TopicGroup): Training
     // Topic-specific labs require reviewed diagnostics and must be authored separately.
     interactiveLabs: [],
     quiz: [
-      mcq({
+      scenarioResponse({
         id: `${slug}-q1`,
-        prompt: `After studying "${topic}", what is the best DCSPrep outcome?`,
+        prompt: `Core 2 technical judgement, ${topic}: Compare TWO technically plausible causes or configurations, one observation that would separate them, and what result would make your initial theory wrong. Do not simply write 'collect details and escalate'.`,
         domain: group.sectionLabel,
-        difficulty: 'foundation',
-        explanation: 'The topic should become practical support judgement, not just recognition.',
-        modelAnswer:
-          'Connect the topic to safe first-line evidence capture, likely symptom buckets, boundaries, and escalation language.',
-        commonMistakes: ['Memorising only the title', 'Changing production settings without approval'],
-        dcsContext: 'Certification study is useful at DCS when it improves safe support decisions.',
+        difficulty: 'stretch',
+        explanation: 'Credit requires topic knowledge, a falsifiable test and a reasoned change of hypothesis; a generic triage slogan is insufficient.',
+        modelAnswer: `${topicNote} An effective answer contrasts two distinct mechanisms or configurations related to the named concept, specifies a safe observation that discriminates between them, and changes the next action when the observation contradicts the leading hypothesis.`,
+        commonMistakes: ['Saying only gather information', 'Naming two causes without discriminating evidence', 'Treating a guess as confirmed root cause'],
+        dcsContext: 'Use fictional devices and approved read-only observations, never school credentials or production system changes.',
         reviewSchedule,
         recommendedModuleId: moduleId,
         weakTopic: group.weakTopic,
-        options: [
-          { id: 'a', label: 'Recognise the title only' },
-          { id: 'b', label: 'Connect it to symptoms, evidence, safe boundaries, and escalation' },
-          { id: 'c', label: 'Use it to bypass normal DCS procedures' },
-          { id: 'd', label: 'Skip it because it is not DCS-specific' }
-        ],
-        correctOptionId: 'b'
+        rubric: ['Two technically distinct plausible causes', 'Observable discriminating evidence', 'Disconfirming outcome', 'Safe jurisdiction and operational boundary']
       }),
       shortAnswer({
         id: `${slug}-q2`,
-        prompt: `List four details Josh should capture if a support issue appears related to "${topic}".`,
+        prompt: `Explain one specific technical mechanism or distinction in "${topic}" and one way an inexperienced technician might misunderstand it. What evidence would you use to correct that mistake?`,
         domain: group.sectionLabel,
-        difficulty: 'foundation',
-        explanation: 'Good first-line notes make the topic operationally useful.',
-        modelAnswer:
-          'Capture user or role, device or service, location, exact symptom, time started, scope, recent changes, safe checks tried, and current impact.',
-        commonMistakes: ['Writing only a vague label', 'Leaving out scope or impact'],
-        dcsContext: 'DCS support needs enough context for the next owner to act safely.',
+        difficulty: 'challenge',
+        explanation: 'The answer must state a real technical relationship, not just repeat an IT process checklist.',
+        modelAnswer: `${topicNote} A high-quality response also identifies a concrete novice misconception and a safe test or authoritative reference that disproves it.`,
+        commonMistakes: ['Only stating whether to escalate', 'No actual concept or mechanism', 'No way to distinguish a misconception from reality'],
+        dcsContext: 'Demonstrate conceptual understanding before applying a support procedure.',
         reviewSchedule,
         recommendedModuleId: moduleId,
         weakTopic: group.weakTopic,
-        rubric: ['Names symptom', 'Captures scope', 'Captures time or change', 'Captures safe checks or impact'],
-        keywordHints: ['symptom', 'scope', 'time', 'impact']
+        rubric: ['Technically accurate mechanism', 'Realistic misconception', 'Relevant discriminating evidence', 'Practical limits'],
+        keywordHints: [topic.toLowerCase().split(' ')[0], 'evidence']
       }),
       orderSteps({
         id: `${slug}-q3`,
