@@ -213,6 +213,11 @@ export default function ModuleDetail({
 
   return (
     <div className="space-y-6 relative">
+      <aside className="rounded-xl border border-sky-200 bg-sky-50 p-4 text-sm text-slate-800" aria-label="Module evidence status">
+        <strong>{moduleData.id.startsWith('messer-core2-topic-') ? 'Orientation only' : 'Developing (provisional)'}</strong>
+        <span> · Finishing activities, achieving 100% progress or gaining XP does not demonstrate independent technician competence.</span>
+        <a className="ml-2 underline" href="https://github.com/Parris-Tech-Services/DCSProfessionalDevelopment/blob/main/docs/SUPPORTOPS-MODULE-QUALITY-REGISTER-2026-10-11.md" target="_blank" rel="noopener noreferrer">View learning quality and missing evidence ↗</a>
+      </aside>
       {/* Quest Status Bar */}
       <div className="sticky top-0 z-50 -mx-4 px-4 py-3 bg-white/80 backdrop-blur-md border-b border-slate-200 flex items-center justify-between shadow-sm lg:rounded-full lg:mx-0 lg:px-6 lg:mb-6">
         <div className="flex items-center gap-3">
