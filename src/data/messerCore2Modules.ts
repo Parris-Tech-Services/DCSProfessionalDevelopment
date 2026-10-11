@@ -198,6 +198,71 @@ const topicSpecificNotes: Record<string, string> = {
     'Focus on recognising firewall symptoms and policy boundaries. Level 1 can gather evidence and explain likely blocking, but should not improvise production firewall rules.',
   'Configuring Windows Firewall':
     'Focus on profile, rule, and application-blocking awareness. The safe DCSPrep outcome is evidence-rich escalation, not unauthorised firewall editing.'
+  "Operating Systems Overview": "Compare the kernel, file system, drivers, user account and application layers. A login failure and a bootloader failure demand different tests; first establish exactly when failure occurs.",
+  "Installing Operating Systems": "Distinguish in-place upgrade, repair install and clean install. Identify storage backups, licence, boot mode and device drivers before authorising an irreversible reinstall.",
+  "Upgrading Windows": "Check hardware eligibility, edition, TPM/Secure Boot, drivers and rollback window. A supported upgrade is not the same as forcing an install that bypasses compatibility checks.",
+  "An Overview of Windows": "Contrast Windows Home, Pro and Enterprise management features; explain why an absent BitLocker management feature cannot be fixed by changing a student's password.",
+  "Windows Features": "Distinguish Windows optional features from installed apps and group-policy restrictions. Identify what can be viewed safely before requesting a feature enablement.",
+  "Task Manager": "Compare CPU, disk active time, RAM committed memory and per-process utilisation. High 100% disk time on an HDD can indicate storage bottleneck without proving malware.",
+  "The Microsoft Management Console": "Understand MMC snap-ins including services, event logs and local device management. Separate read-only inspection from system-wide service or policy changes.",
+  "Additional Windows Tools": "Use Event Viewer, Reliability Monitor and Resource Monitor as corroborating evidence. A single logged error is not proof of the incident's cause.",
+  "Windows Command Line Tools": "Contrast sfc, DISM, tasklist and systeminfo by what each measures or changes. Never run repair flags before recording symptoms and having change approval.",
+  "The Windows Network Command Line": "Interpret ipconfig, ping, nslookup and tracert together. A successful ping to an IP with failed DNS lookup points elsewhere than a disconnected adapter.",
+  "The Windows Control Panel": "Know which legacy applet changes sound, networking and programs. Identify when settings are user-scoped versus administrative rather than clicking blindly.",
+  "Windows Settings": "Use Settings for modern Windows display, sound and network triage; confirm OS version because the interface and feature locations vary.",
+  "Windows Network Technologies": "Separate IP transport, DNS name resolution, Wi-Fi association, VPN tunnelling and SMB file shares. A web browser issue is not automatically a WAN outage.",
+  "Windows IP Address Configuration": "Recognise APIPA 169.254/16, DHCP lease, subnet mask, gateway and DNS server roles. Capture ipconfig /all before proposing any static IP change.",
+  "Windows Network Connections": "Distinguish Ethernet link-state, Wi-Fi association, proxy and VPN interface symptoms. Compare a wired test against Wi-Fi without changing network policies.",
+  "macOS Overview": "Compare APFS volumes, Gatekeeper, FileVault and Time Machine; identify macOS-specific diagnostic options rather than applying Windows registry fixes.",
+  "macOS System Preferences": "System Preferences was renamed System Settings in newer macOS versions. Describe the exact model/version and permission state before support guidance.",
+  "macOS Features": "Differentiate Keychain, Spotlight, Finder, iCloud and Continuity. A missing file in Finder may be a sync/location issue rather than disk failure.",
+  "Linux": "Understand distributions, kernel, package managers and permission boundaries. An unmounted drive and a missing file in a different user's home directory require different approaches.",
+  "Linux Commands Part 1": "Practice pwd, ls, cd, cat and grep on fictional files. Distinguish safe read-only commands from wildcard deletion or permission changes.",
+  "Linux Commands Part 2": "Interpret ps, top, journalctl, ip and systemctl status before editing services. Restarting a service on a live host requires change approval.",
+  "Installing Applications": "Compare signed installer, package repository, Store deployment and software policy. Check OS/CPU compatibility and licensing before installation.",
+  "Cloud Productivity Tools": "Distinguish local cached content, cloud storage, permissions, browser identity and provider outage. A sync problem should be reproduced in the browser when safe.",
+  "Physical Security": "Separate perimeter, key, rack, camera, visitor access and device custody controls. A locked room does not by itself prove a data drive has not been accessed.",
+  "Physical Access Security": "Assess badges, visitor logs, tailgating and lost credentials. Avoid presuming an access log proves human identity without checking its coverage.",
+  "Logical Security": "Contrast identity authentication, authorisation, least privilege and audit logs. A successful sign-in does not establish appropriate permissions.",
+  "Authentication and Access": "Compare knowledge, possession and biometric factors; distinguish MFA fatigue from lost device and expired password support paths.",
+  "Defender Antivirus": "Distinguish real-time protection, signatures, quarantine, investigation history and false positives; avoid deleting evidence during an incident.",
+  "Windows Security Settings": "Review SmartScreen, UAC, device encryption and security baselines in context. A disabled warning can reflect policy or a risky change.",
+  "Wireless Encryption": "Compare WPA2-PSK, WPA3 and enterprise authentication; recognise that a strong Wi-Fi passphrase does not resolve rogue AP or weak client security.",
+  "Authentication Methods": "Contrast password, passkey, FIDO2, OTP, push and hardware token; assess phishing resistance and account recovery, not just convenience.",
+  "Malware": "Separate observable symptoms, indicators of compromise and confirmed infection. Slow performance alone is not a malware diagnosis.",
+  "Anti-malware Tools": "Know differences between approved EDR telemetry, on-demand scan and offline recovery. Collect logs and follow incident procedure before remediation.",
+  "Social Engineering": "Recognise urgency, impersonation, authority pressure and call-back verification. An attacker can use accurate staff names while still lacking authorisation.",
+  "Denial of Service": "Distinguish local DNS faults, overloaded resources and actual volumetric denial of service. Capture multiple-site impact and telemetry before labelling an attack.",
+  "On-Path Attacks": "Explain the difference between TLS warnings, unsafe Wi-Fi and a verified interception attack. Do not bypass certificate errors to complete support tasks.",
+  "Zero-Day Attacks": "Separate unknown vulnerability, exploited vulnerability and confirmed local compromise; discuss patch mitigations without assuming every alert is an active attack.",
+  "Password Attacks": "Compare credential stuffing, password spraying and brute force by evidence pattern. Repeated failures from many accounts should not be treated as one forgotten password.",
+  "Insider Threats": "Avoid accusing individuals based on suspicious logs alone. Preserve provenance, access scope and authorised reporting boundaries.",
+  "SQL Injection Attacks": "Explain input-as-code versus parameterised queries conceptually. An unusual URL string is not permission to attempt injection testing.",
+  "Cross-site Scripting": "Distinguish stored and reflected script execution in a web page; investigate sanitisation and reporting without pasting test payloads into production apps.",
+  "Business Email Compromise": "Investigate changed bank details or urgent executive requests using independently verified contact channels, not reply-to fields in suspect messages.",
+  "Supply Chain Attacks": "Examine compromised dependencies, vendor accounts, signed updates and trust chains. Software updates are not automatically trustworthy because they come from a familiar product.",
+  "Security Vulnerabilities": "Distinguish theoretical vulnerability, exposed asset, verified exploitability and mitigation. Rate risk using context rather than scary severity labels alone.",
+  "Removing Malware": "Decide when to isolate, preserve evidence, reimage or restore from trusted backup. A clean antivirus result does not establish complete remediation.",
+  "Security Best Practices": "Apply least privilege, patching, MFA, backup isolation and evidence-based verification; distinguish policies from operational enforcement.",
+  "Mobile Device Security": "Compare managed device compliance, OS patch level, app permissions, lost-phone actions and personal-device privacy boundaries.",
+  "Data Destruction": "Distinguish logical deletion, cryptographic erase and physical destruction, and select validation based on storage type and chain-of-custody evidence.",
+  "Securing a SOHO Network": "Assess firmware support, WPA security, guest isolation, administrative passwords and IoT segregation before declaring a router secure.",
+  "Browser Security": "Contrast extensions, phishing domains, browser profiles, certificate warnings and session cookies; clearing browser data is not a universal security fix.",
+  "Troubleshooting Windows": "Use a fault tree separating boot, login, network, update and application failures; compare Reliability Monitor evidence against reported onset.",
+  "Troubleshooting Mobile Devices": "Distinguish battery, cellular, Wi-Fi, OS, app permissions and user profile issues; avoid resetting a device with unverified backups.",
+  "Troubleshooting Mobile Device Security": "Investigate suspicious profiles, lost MFA device, outdated OS and unexpected sign-ins; distinguish a compromise indicator from normal MDM enforcement.",
+  "Troubleshooting Security Issues": "Start with containment scope and evidence preservation rather than running random tools. Route verified security incidents to the authorised response process.",
+  "Asset Management": "Trace asset ID, serial, custody, status, location, owner and disposal evidence; reconcile an untracked data drive before moving the chassis.",
+  "Document Types": "Distinguish incident note, change record, runbook, risk register, customer consent and sanitisation certificate; each requires different approvals and evidence.",
+  "Change Management": "Explain request, risk, approval, implementation, rollback and post-check. Emergency change is not permission to omit records.",
+  "Managing Backups": "Separate backup job success from independently validated restore capability, retention and offsite isolation. Verify recovery objectives against restore tests.",
+  "Managing Electrostatic Discharge": "Explain grounding, humidity, board handling and component packaging; a wrist strap alone does not make mains or battery work safe.",
+  "Safety Procedures": "Map electrical, thermal, sharp-edge and chemical hazards to stop-work thresholds; never equate safe isolation with authorisation to open a mains power supply.",
+  "Environmental Impacts": "Compare reuse, repair, recycling and disposal using realistic transport, energy, useful life and material assumptions, not slogans.",
+  "Incident Response": "Separate event, alert and declared incident; practise detection, containment, evidence, recovery and lessons learnt through a privacy-safe example.",
+  "Privacy, Licensing, and Policies": "Distinguish legally required privacy controls, licence terms and internal policy; do not copy customer content into public training systems.",
+  "Professionalism": "Practise expectation setting when you do not yet know root cause, scope or ETA; make an escalation promise based on a known owner.",
+  "Communication": "Use teach-back, an accurate problem summary and an agreed next action; adapt technical detail to the user without omitting material risks.",
 };
 
 function topicReadingNote(topic: string) {
@@ -261,68 +326,9 @@ function createCore2TopicModule(topic: string, group: Core2TopicGroup): Training
       { id: `${slug}-f7`, front: 'Why use a known-good comparison?', back: 'It narrows whether the issue is local, account-based, service-wide, network-related, or policy-related.' },
       { id: `${slug}-f8`, front: 'What makes the assessment useful?', back: 'It checks judgement, not just whether the video title was recognised.' }
     ],
-    interactiveLabs: [
-      {
-        id: 'lab-student-169-ip',
-        title: 'Student Laptop 169.254 IP',
-        scenario: 'A student says their internet is "broken". You run ipconfig and see an IPv4 address starting with 169.254.',
-        decisionPoints: [
-          {
-            id: 'd0',
-            question: 'What is the FIRST question Josh should ask the student?',
-            options: [
-              { id: 'o1', label: 'Does your laptop say "Connected" to the Wi-Fi?', feedback: 'Good. Distinguishes between adapter issues and IP lease issues.', isCorrect: true },
-              { id: 'o2', label: 'Have you tried restarting Chrome?', feedback: 'Likely won\'t fix an APIPA address.', isCorrect: false }
-            ]
-          },
-          {
-            id: 'd1',
-            question: 'What does this IP address immediately tell you?',
-            options: [
-              { id: 'o1', label: 'The DNS server is down.', feedback: 'Incorrect. 169.254 is an APIPA address meaning DHCP failed.', isCorrect: false },
-              { id: 'o2', label: 'The laptop failed to get a DHCP lease.', feedback: 'Correct. This narrows the issue to Wi-Fi connectivity or DHCP server reachability.', isCorrect: true }
-            ]
-          },
-          {
-            id: 'd2',
-            question: 'What is a safe first check?',
-            options: [
-              { id: 'o1', label: 'Toggle Wi-Fi off and back on.', feedback: 'Good. A simple re-association can often trigger a successful DHCP request.', isCorrect: true },
-              { id: 'o2', label: 'Assign a static IP address.', feedback: 'NEVER do this on a student laptop. It will break when they move to another room or home.', isCorrect: false }
-            ]
-          }
-        ],
-        dcsApplication: 'At DCS, check if other students in the same room are affected. If it is just one, focus on that laptop adapter/profile.',
-        retrievalQuestion: 'What does 169.254 stand for in networking terms?',
-        reflectionPrompt: 'How do you explain to a student that "bars" on Wi-Fi don\'t always mean "internet"?'
-      },
-      {
-        id: 'lab-hdmi-audio',
-        title: 'HDMI Audio Troubleshooting',
-        scenario: 'A teacher has connected their laptop to the ViewBoard via HDMI. The video is clear, but the audio is still coming out of the tiny laptop speakers.',
-        decisionPoints: [
-          {
-            id: 'd1',
-            question: 'What is a safe first check in Windows?',
-            options: [
-              { id: 'o1', label: 'Check the Sound Output device in the Taskbar.', feedback: 'Correct. Often Windows doesn\'t automatically switch the default playback device to HDMI.', isCorrect: true },
-              { id: 'o2', label: 'Reinstall the graphics driver.', feedback: 'Too early. Audio switching is usually a configuration issue, not a driver failure.', isCorrect: false }
-            ]
-          },
-          {
-            id: 'd2',
-            question: 'The output is set to "ViewBoard", but there is still no sound. What should Josh ask next?',
-            options: [
-              { id: 'o1', label: 'Is the ViewBoard itself muted or at 0 volume?', feedback: 'Practical. Simple hardware volume checks save time.', isCorrect: true },
-              { id: 'o2', label: 'Is your laptop plugged into power?', feedback: 'Unlikely to affect HDMI audio routing.', isCorrect: false }
-            ]
-          }
-        ],
-        dcsApplication: 'At DCS, ViewBoards have their own remote and side-panel volume buttons. Always check both.',
-        retrievalQuestion: 'Does HDMI carry both video and audio signals?',
-        reflectionPrompt: 'How do you test audio without playing something loud that disrupts the class?'
-      }
-    ],
+    // Do not attach unrelated generic APIPA/HDMI labs to every subject.
+    // Topic-specific labs require reviewed diagnostics and must be authored separately.
+    interactiveLabs: [],
     quiz: [
       mcq({
         id: `${slug}-q1`,
@@ -403,14 +409,14 @@ function createCore2TopicModule(topic: string, group: Core2TopicGroup): Training
       {
         id: `${slug}-s1`,
         title: `${topic} support scenario`,
-        prompt: `Apply "${topic}" to a realistic but privacy-safe DCS support symptom and decide what to check, avoid, and escalate.`
+        prompt: `Apply the subject-specific concept below to a fictional case. Contrast TWO plausible causes, identify one safe observation to distinguish them, and explain the escalation boundary. Concept: ${topicNote}`
       }
     ],
     practicalOutputs: [
       {
         id: `${slug}-p1`,
         title: `${topic} one-page study card`,
-        description: `Create a privacy-safe one-page card for "${topic}" with key terms, safe first checks, do-not-touch boundaries, and an escalation sentence.`
+        description: `Build a topic-specific two-hypothesis diagnostic tree for "${topic}". Ground it in the supplied notes, include a known-good comparison, one disconfirming result, safety boundaries and a model support handover.`
       }
     ]
   };
