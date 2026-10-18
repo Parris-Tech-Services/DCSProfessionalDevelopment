@@ -1,9 +1,7 @@
 name: Resolve DCS publisher feeds
 on:
-  push:
-    branches: [main, deploy-ready]
-    paths:
-      - '.github/workflows/resolve-dcs-publisher-feeds.yml'
+  workflow_dispatch:
+
 permissions:
   contents: write
 jobs:
