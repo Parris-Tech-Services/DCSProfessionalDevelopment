@@ -123,6 +123,7 @@ export default function HomePage() {
 
   return (
     <div className="space-y-6">
+      <Link href="/learning-path" className="block rounded-2xl border border-emerald-200 bg-emerald-50 p-5 font-semibold text-emerald-900 hover:bg-emerald-100">Learn networking across all four apps →</Link>
       <section className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex-1">
