@@ -4,6 +4,7 @@ import { dcsWorkflowModules } from './dcsWorkflowModules';
 import { messerCore2Modules } from './messerCore2Modules';
 import { m365FilesModule } from './m365FilesModule';
 import { onboardingModule } from './onboardingModule';
+import { mspNetworkingModules } from './mspNetworkingModules';
 
 export type ModuleData = TrainingModule;
 
@@ -5049,6 +5050,7 @@ These are the building blocks of almost every script or automation task.`
     practicalOutputs: [{ id: 'cv-p1', title: 'Camera/Hello triage checklist', description: 'Build a quick checklist for permissions, hardware, enrollment, and escalation evidence.' }],
     sourceSubjects: [{ code: 'CSE5CV', title: 'Computer Vision', course: 'SMITB', silos: ['Vision workflows'], alignmentNote: 'Applies CV context to practical first-line camera and Hello troubleshooting.', slgCurrency: 'Source reference map; verify current delivery before formal claims.' }]
   },
+  ...mspNetworkingModules,
   ...messerCore2Modules,
   ...dcsWorkflowModules,
   m365FilesModule,
