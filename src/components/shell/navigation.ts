@@ -24,6 +24,7 @@ export const navigationGroups: NavGroup[] = [
     label: 'Learn',
     items: [
       { href: '/modules', label: 'Modules' },
+      { href: '/subnetting', label: 'Subnet Lab' },
       { href: '/academic-pd', label: 'Academic PD' },
       { href: '/search', label: 'Search' }
     ]
