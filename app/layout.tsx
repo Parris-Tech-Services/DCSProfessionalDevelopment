@@ -9,6 +9,7 @@ import IndependentPodcastPlayer from '../src/components/podcast/IndependentPodca
 import { AuthProvider } from '../src/contexts/AuthContext';
 import { UIProvider } from '../src/contexts/UIContext';
 import { LayoutShell } from '../src/components/shell/LayoutShell';
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: 'SupportOps Career Lab',
@@ -36,6 +37,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </UIProvider>
         </AuthProvider>
         <IndependentPodcastPlayer />
+        <Script
+          src="https://cloud.umami.is/script.js"
+          strategy="afterInteractive"
+          data-website-id="__UMAMI_WEBSITE_ID__"
+          data-do-not-track="true"
+          data-performance="true"
+          data-domains="dcs-professional-development.vercel.app"
+          data-tag="DCSProfessionalDevelopment"
+        />
       </body>
     </html>
   );
