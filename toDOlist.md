@@ -437,7 +437,7 @@ Once scenarios exist, make the app help you create useful artefacts.
 * [X] Website unblock request checklist
 * [X] Teams/SharePoint/OneDrive triage guide
 * [X] Escalation note examples
-* [ ] “What system owns this issue?” decision tree
+* [ ] **UN-20261024-033-0440** “What system owns this issue?” decision tree
 
 **Why:** These create visible value without demanding more permissions.
 
@@ -477,13 +477,13 @@ Again, not deep ownership:
 
 These are important, but after the real DCS support flow exists.
 
-* [ ] VLANs and guest Wi-Fi segmentation
-* [ ] Group Policy vs MDM
-* [ ] Intune/Jamf device management concepts
-* [ ] Cloud models: SaaS / PaaS / IaaS / DaaS
-* [ ] Ports and protocols
-* [ ] Endpoint security basics
-* [ ] Scripting/automation basics
+* [ ] **UN-20261024-033-0480** VLANs and guest Wi-Fi segmentation
+* [ ] **UN-20261024-033-0481** Group Policy vs MDM
+* [ ] **UN-20261024-033-0482** Intune/Jamf device management concepts
+* [ ] **UN-20261024-033-0483** Cloud models: SaaS / PaaS / IaaS / DaaS
+* [ ] **UN-20261024-033-0484** Ports and protocols
+* [ ] **UN-20261024-033-0485** Endpoint security basics
+* [ ] **UN-20261024-033-0486** Scripting/automation basics
 
 **Why:** These help your Level 2 growth, but they should not displace daily support skills.
 
@@ -491,11 +491,11 @@ These are important, but after the real DCS support flow exists.
 
 # P8 — Evidence and PD export
 
-* [ ] PD log
-* [ ] monthly summary
-* [ ] evidence pack
-* [ ] copy-to-clipboard manager-safe summary
-* [ ] link modules/scenarios/practical outputs to PD entries
+* [ ] **UN-20261024-033-0494** PD log
+* [ ] **UN-20261024-033-0495** monthly summary
+* [ ] **UN-20261024-033-0496** evidence pack
+* [ ] **UN-20261024-033-0497** copy-to-clipboard manager-safe summary
+* [ ] **UN-20261024-033-0498** link modules/scenarios/practical outputs to PD entries
 
 **Why:** Useful, but only once the learning engine has meaningful activity to summarise.
 
@@ -505,11 +505,11 @@ These are important, but after the real DCS support flow exists.
 
 Keep them, but make them evidence-based.
 
-* [ ] A+ readiness graph
-* [ ] Level 2 readiness graph
-* [ ] School IT manager readiness graph
-* [ ] label unsupported domains as “estimate”
-* [ ] update scores from actual performance
+* [ ] **UN-20261024-033-0508** A+ readiness graph
+* [ ] **UN-20261024-033-0509** Level 2 readiness graph
+* [ ] **UN-20261024-033-0510** School IT manager readiness graph
+* [ ] **UN-20261024-033-0511** label unsupported domains as “estimate”
+* [ ] **UN-20261024-033-0512** update scores from actual performance
 
 **Why:** Motivating, but less urgent than real learning loops.
 
@@ -562,9 +562,9 @@ The roadmap is complete only when:
 
 ## 1. Finalize the content architecture and storage model
 
-- [ ] Extend shared types for modules, question types, flashcards, study techniques, scenario turns, scenario note scoring, practical outputs, knowledge-base drafts, evidence-pack summaries, and internal-source metadata.
-- [ ] Add a single DCS workflow taxonomy covering systems, ticket themes, ownership boundaries, support level, and escalation category.
-- [ ] Add localStorage schema entries for:
+- [ ] **UN-20261024-033-0565** Extend shared types for modules, question types, flashcards, study techniques, scenario turns, scenario note scoring, practical outputs, knowledge-base drafts, evidence-pack summaries, and internal-source metadata.
+- [ ] **UN-20261024-033-0566** Add a single DCS workflow taxonomy covering systems, ticket themes, ownership boundaries, support level, and escalation category.
+- [ ] **UN-20261024-033-0567** Add localStorage schema entries for:
   - assessment attempts
   - confidence ratings
   - self-rubric scores
@@ -574,10 +574,10 @@ The roadmap is complete only when:
   - practical outputs
   - knowledge-base drafts
   - evidence-pack settings
-- [ ] Add storage versioning and migration so existing users do not lose progress when the model expands.
-- [ ] Add privacy-safe metadata fields so content can be tagged as derived from internal DCS resources without copying confidential text.
-- [ ] Add helper functions for loading, saving, and validating all new progress objects.
-- [ ] Add tests for schema validation, migrations, and default-state creation.
+- [ ] **UN-20261024-033-0577** Add storage versioning and migration so existing users do not lose progress when the model expands.
+- [ ] **UN-20261024-033-0578** Add privacy-safe metadata fields so content can be tagged as derived from internal DCS resources without copying confidential text.
+- [ ] **UN-20261024-033-0579** Add helper functions for loading, saving, and validating all new progress objects.
+- [ ] **UN-20261024-033-0580** Add tests for schema validation, migrations, and default-state creation.
 
 Done when:
 
@@ -588,7 +588,7 @@ Done when:
 ## 2. Rebuild the module experience so it is question-first
 
 - [X] Redesign the module landing view so the first action is a short diagnostic, not passive reading.
-- [ ] Standardize every module to this structure:
+- [ ] **UN-20261024-033-0591** Standardize every module to this structure:
   - diagnostic questions
   - flashcards
   - short-answer recall
@@ -597,15 +597,15 @@ Done when:
   - scenario step or scenario prompt
   - practical output
   - review queue
-- [ ] Add a reusable module progress model that tracks completion by activity type, not only by reading or quiz completion.
-- [ ] Show weak areas, due review, and next best action at the top of each module.
-- [ ] Make explanation content appear after recall attempts or alongside guided reveal, so the flow stays retrieval-first.
-- [ ] Update module cards and module detail pages to show:
+- [ ] **UN-20261024-033-0600** Add a reusable module progress model that tracks completion by activity type, not only by reading or quiz completion.
+- [ ] **UN-20261024-033-0601** Show weak areas, due review, and next best action at the top of each module.
+- [ ] **UN-20261024-033-0602** Make explanation content appear after recall attempts or alongside guided reveal, so the flow stays retrieval-first.
+- [ ] **UN-20261024-033-0603** Update module cards and module detail pages to show:
   - due items
   - weak topics
   - estimated time
   - practical output status
-- [ ] Add tests for module completion math and next-step recommendation logic.
+- [ ] **UN-20261024-033-0608** Add tests for module completion math and next-step recommendation logic.
 
 Done when:
 
@@ -614,19 +614,19 @@ Done when:
 
 ## 3. Implement the study-technique layer the roadmap depends on
 
-- [ ] Add Active Recall mode that hides answers until Josh attempts recall.
-- [ ] Add Feynman prompts with a simple rubric for:
+- [ ] **UN-20261024-033-0617** Add Active Recall mode that hides answers until Josh attempts recall.
+- [ ] **UN-20261024-033-0618** Add Feynman prompts with a simple rubric for:
   - clarity
   - correctness
   - practical relevance
-- [ ] Add explicit Leitner-style flashcard boxes or labels on top of the existing spaced-repetition system.
-- [ ] Add concept-sorting exercises for symptoms, systems, ownership boundaries, and escalation decisions.
-- [ ] Add mnemonic-builder prompts for ports, workflows, and system distinctions.
-- [ ] Add Cornell-style guided note templates for module review and scenario debrief.
-- [ ] Add SQ3R-style reading companion prompts for safely turning internal resources into questions and summaries.
-- [ ] Add micro-learning task cards that fit short quiet windows.
-- [ ] Add a Pomodoro-style timer tied to one learning task.
-- [ ] Add end-of-session prompts:
+- [ ] **UN-20261024-033-0622** Add explicit Leitner-style flashcard boxes or labels on top of the existing spaced-repetition system.
+- [ ] **UN-20261024-033-0623** Add concept-sorting exercises for symptoms, systems, ownership boundaries, and escalation decisions.
+- [ ] **UN-20261024-033-0624** Add mnemonic-builder prompts for ports, workflows, and system distinctions.
+- [ ] **UN-20261024-033-0625** Add Cornell-style guided note templates for module review and scenario debrief.
+- [ ] **UN-20261024-033-0626** Add SQ3R-style reading companion prompts for safely turning internal resources into questions and summaries.
+- [ ] **UN-20261024-033-0627** Add micro-learning task cards that fit short quiet windows.
+- [ ] **UN-20261024-033-0628** Add a Pomodoro-style timer tied to one learning task.
+- [ ] **UN-20261024-033-0629** Add end-of-session prompts:
   - What did I learn?
   - Where would this show up at DCS?
   - What is the next small step?
@@ -640,26 +640,26 @@ Done when:
 
 For every new module below, complete all of these sub-items:
 
-- [ ] Write 3 to 5 short lessons.
-- [ ] Add at least 10 flashcards.
-- [ ] Add at least 8 mixed assessment items.
-- [ ] Add at least 1 scenario prompt or embedded scenario step.
-- [ ] Add at least 1 practical output.
-- [ ] Add ownership-boundary notes showing what belongs to ICT, admin, leadership, or another system owner.
-- [ ] Add a privacy-safe example of good ticket or escalation wording.
+- [ ] **UN-20261024-033-0643** Write 3 to 5 short lessons.
+- [ ] **UN-20261024-033-0644** Add at least 10 flashcards.
+- [ ] **UN-20261024-033-0645** Add at least 8 mixed assessment items.
+- [ ] **UN-20261024-033-0646** Add at least 1 scenario prompt or embedded scenario step.
+- [ ] **UN-20261024-033-0647** Add at least 1 practical output.
+- [ ] **UN-20261024-033-0648** Add ownership-boundary notes showing what belongs to ICT, admin, leadership, or another system owner.
+- [ ] **UN-20261024-033-0649** Add a privacy-safe example of good ticket or escalation wording.
 
 Required new modules:
 
-- [ ] 4.1 `Parent Portal Registration`
-- [ ] 4.2 `Parent Portal Details Updates`
-- [ ] 4.3 `Sentral Support`
-- [ ] 4.4 `OurDCS / Schoolbox Support`
-- [ ] 4.5 `Login, Password, Lockout, MFA, and Self-Service Recovery`
-- [ ] 4.6 `Permissions, Shared Drives, and Access Requests`
-- [ ] 4.7 `Website Filtering and Unblock Request Triage`
-- [ ] 4.8 `New User Onboarding and Missing-Access Checks`
-- [ ] 4.9 `Teams, SharePoint, and OneDrive Support Basics`
-- [ ] 4.10 `iPad and Jamf Workflow Basics`
+- [ ] **UN-20261024-033-0653** 4.1 `Parent Portal Registration`
+- [ ] **UN-20261024-033-0654** 4.2 `Parent Portal Details Updates`
+- [ ] **UN-20261024-033-0655** 4.3 `Sentral Support`
+- [ ] **UN-20261024-033-0656** 4.4 `OurDCS / Schoolbox Support`
+- [ ] **UN-20261024-033-0657** 4.5 `Login, Password, Lockout, MFA, and Self-Service Recovery`
+- [ ] **UN-20261024-033-0658** 4.6 `Permissions, Shared Drives, and Access Requests`
+- [ ] **UN-20261024-033-0659** 4.7 `Website Filtering and Unblock Request Triage`
+- [ ] **UN-20261024-033-0660** 4.8 `New User Onboarding and Missing-Access Checks`
+- [ ] **UN-20261024-033-0661** 4.9 `Teams, SharePoint, and OneDrive Support Basics`
+- [ ] **UN-20261024-033-0662** 4.10 `iPad and Jamf Workflow Basics`
 
 Done when:
 
@@ -668,53 +668,53 @@ Done when:
 
 ## 5. Deepen the existing modules so they teach real DCS work better
 
-- [ ] Expand `DCS IT Support Foundations` with:
+- [ ] **UN-20261024-033-0671** Expand `DCS IT Support Foundations` with:
   - multi-campus context
   - role boundaries
   - internal workflow/source awareness
   - safe escalation rules
-- [ ] Expand `Printer Troubleshooting` with:
+- [ ] **UN-20261024-033-0676** Expand `Printer Troubleshooting` with:
   - PaperCut / Follow-Me release
   - photocopier faults
   - queue-vs-device reasoning
   - service-call handoff details
-- [ ] Expand `Classroom Display and ViewBoard Troubleshooting` with:
+- [ ] **UN-20261024-033-0681** Expand `Classroom Display and ViewBoard Troubleshooting` with:
   - Windows+P
   - no-audio workflows
   - touch calibration
   - projector thermal and lamp faults
   - recurring room-fault capture
-- [ ] Expand `DNS, DHCP, Gateway, and IP Basics` with:
+- [ ] **UN-20261024-033-0687** Expand `DNS, DHCP, Gateway, and IP Basics` with:
   - SSID errors
   - forget/rejoin
   - compare-another-device checks
   - BYOD and iPad onboarding context
-- [ ] Expand `Ports and Protocols` with:
+- [ ] **UN-20261024-033-0692** Expand `Ports and Protocols` with:
   - troubleshooting use cases
   - school-device and service examples
   - memory aids
-- [ ] Expand `M365 Identity and Offboarding Basics` with:
+- [ ] **UN-20261024-033-0696** Expand `M365 Identity and Offboarding Basics` with:
   - block sign-in
   - session revocation
   - sign-in logs
   - MFA cleanup
   - shared resource cleanup
   - visibility-delay explanation
-- [ ] Expand `MDM, Intune, and Group Policy Concepts` with:
+- [ ] **UN-20261024-033-0703** Expand `MDM, Intune, and Group Policy Concepts` with:
   - startup vs sign-in vs background refresh
   - OU placement
   - security filtering
   - printer deployment
   - work-profile and managed-data concepts
-- [ ] Expand `VLANs and Network Segmentation` with:
+- [ ] **UN-20261024-033-0709** Expand `VLANs and Network Segmentation` with:
   - guest internet-only patterns
   - source-destination rule writing
   - staff/student/printer access examples
-- [ ] Expand `Cloud Models: SaaS, PaaS, IaaS, and DaaS` with:
+- [ ] **UN-20261024-033-0713** Expand `Cloud Models: SaaS, PaaS, IaaS, and DaaS` with:
   - school support use cases
   - DaaS vs local install trade-offs
   - BYOD application scenarios
-- [ ] Expand `Ticket Notes and Escalation Quality` with:
+- [ ] **UN-20261024-033-0717** Expand `Ticket Notes and Escalation Quality` with:
   - stronger Jira examples
   - better scope and urgency writing
   - privacy-safe wording practice
@@ -725,21 +725,21 @@ Done when:
 
 ## 6. Expand the strict assessment bank to roadmap level
 
-- [ ] Raise the total strict question bank to at least 80 scored items.
-- [ ] Ensure every Tier 1 module has at least 8 scored items.
-- [ ] Ensure every expanded technical module has enough questions to test real application, not just definitions.
-- [ ] Include all required question types:
+- [ ] **UN-20261024-033-0728** Raise the total strict question bank to at least 80 scored items.
+- [ ] **UN-20261024-033-0729** Ensure every Tier 1 module has at least 8 scored items.
+- [ ] **UN-20261024-033-0730** Ensure every expanded technical module has enough questions to test real application, not just definitions.
+- [ ] **UN-20261024-033-0731** Include all required question types:
   - MCQ
   - short answer
   - order the steps
   - scenario response
   - reflection
 - [X] Require confidence rating before every scored answer.
-- [ ] Store correctness, reasoning, judgement, and next review outcome for every attempt.
-- [ ] Add model answers and self-rating rubrics where auto-marking is not possible.
+- [ ] **UN-20261024-033-0738** Store correctness, reasoning, judgement, and next review outcome for every attempt.
+- [ ] **UN-20261024-033-0739** Add model answers and self-rating rubrics where auto-marking is not possible.
 - [X] Add plausible distractors only.
-- [ ] Add mixed-domain drills so weak topics get revisited in different contexts.
-- [ ] Add tests for scoring logic, confidence capture, and review-scheduling output.
+- [ ] **UN-20261024-033-0741** Add mixed-domain drills so weak topics get revisited in different contexts.
+- [ ] **UN-20261024-033-0742** Add tests for scoring logic, confidence capture, and review-scheduling output.
 
 Done when:
 
@@ -752,7 +752,7 @@ Done when:
   - no internet in classroom
   - staff offboarding and M365 access
   - ViewBoard display issue
-- [ ] Add the 10 roadmap scenarios:
+- [ ] **UN-20261024-033-0755** Add the 10 roadmap scenarios:
   - HDMI works but no audio
   - student laptop has 169.254 IP
   - printer jobs stuck in queue
@@ -763,15 +763,15 @@ Done when:
   - Sentral markbook or access-key issue
   - password lockout or self-service reset failure
   - new user onboarding with missing system access
-- [ ] Ensure every scenario has:
+- [ ] **UN-20261024-033-0766** Ensure every scenario has:
   - 4 to 6 turns
   - realistic reveal steps
   - an escalation point
   - an ideal troubleshooting path
   - a risk/privacy note
   - a model answer summary
-- [ ] Require a Jira-style note at the end of every scenario.
-- [ ] Add note scoring against:
+- [ ] **UN-20261024-033-0773** Require a Jira-style note at the end of every scenario.
+- [ ] **UN-20261024-033-0774** Add note scoring against:
   - who / where / device
   - exact symptom
   - scope
@@ -779,9 +779,9 @@ Done when:
   - urgency / impact
   - next action
   - privacy-safe wording
-- [ ] Store scenario attempts, note scores, and revisit flags in localStorage.
-- [ ] Add due-review hooks so missed scenario decisions come back later.
-- [ ] Add tests for scenario progression, note-scoring math, and revisit scheduling.
+- [ ] **UN-20261024-033-0782** Store scenario attempts, note scores, and revisit flags in localStorage.
+- [ ] **UN-20261024-033-0783** Add due-review hooks so missed scenario decisions come back later.
+- [ ] **UN-20261024-033-0784** Add tests for scenario progression, note-scoring math, and revisit scheduling.
 
 Done when:
 
@@ -790,28 +790,28 @@ Done when:
 
 ## 8. Upgrade Due Today, spaced repetition, and the Error Log
 
-- [ ] Merge flashcards, missed questions, weak scenario steps, and note-writing weak points into one due-review system.
-- [ ] Show due items by:
+- [ ] **UN-20261024-033-0793** Merge flashcards, missed questions, weak scenario steps, and note-writing weak points into one due-review system.
+- [ ] **UN-20261024-033-0794** Show due items by:
   - topic
   - system
   - difficulty
   - review type
-- [ ] Add Leitner-style box visibility for flashcards.
-- [ ] Keep Again / Hard / Good / Easy scheduling but map it clearly to due dates and box movement.
-- [ ] Improve the Error Log so every entry shows:
+- [ ] **UN-20261024-033-0799** Add Leitner-style box visibility for flashcards.
+- [ ] **UN-20261024-033-0800** Keep Again / Hard / Good / Easy scheduling but map it clearly to due dates and box movement.
+- [ ] **UN-20261024-033-0801** Improve the Error Log so every entry shows:
   - what Josh answered
   - what was correct
   - why it matters at DCS
   - next review date
   - linked module
   - linked practice action
-- [ ] Add "practise again" flows from Error Log entries into drills or scenarios.
-- [ ] Add weak-area rollups across:
+- [ ] **UN-20261024-033-0808** Add "practise again" flows from Error Log entries into drills or scenarios.
+- [ ] **UN-20261024-033-0809** Add weak-area rollups across:
   - systems
   - workflows
   - judgement/risk
   - note quality
-- [ ] Add tests for due-item calculation, box movement, and error-group rollups.
+- [ ] **UN-20261024-033-0814** Add tests for due-item calculation, box movement, and error-group rollups.
 
 Done when:
 
@@ -820,19 +820,19 @@ Done when:
 
 ## 9. Build the quiet-window workflow and focus modes
 
-- [ ] Add `Start tiny` mode.
+- [ ] **UN-20261024-033-0823** Add `Start tiny` mode.
 - [x] Add `20-minute focus block` mode.
-- [ ] Add `I'm overwhelmed` mode with three simple actions.
-- [ ] Add one-click quick starts from the dashboard for:
+- [ ] **UN-20261024-033-0825** Add `I'm overwhelmed` mode with three simple actions.
+- [ ] **UN-20261024-033-0826** Add one-click quick starts from the dashboard for:
   - 10-question drill
   - scenario step
   - due flashcards
   - PD log entry
   - readiness view
-- [ ] Add ticket-theme-weighted recommendations based on weak areas and due items.
-- [ ] Add a single-task session view that removes extra clutter during focused practice.
-- [ ] Add end-of-session reflection capture.
-- [ ] Add tests for recommendation logic and task-mode routing.
+- [ ] **UN-20261024-033-0832** Add ticket-theme-weighted recommendations based on weak areas and due items.
+- [ ] **UN-20261024-033-0833** Add a single-task session view that removes extra clutter during focused practice.
+- [ ] **UN-20261024-033-0834** Add end-of-session reflection capture.
+- [ ] **UN-20261024-033-0835** Add tests for recommendation logic and task-mode routing.
 
 Done when:
 
@@ -841,7 +841,7 @@ Done when:
 
 ## 10. Build the practical-output and Knowledge Base Lab workflow
 
-- [ ] Add practical-output templates for:
+- [ ] **UN-20261024-033-0844** Add practical-output templates for:
   - Parent Portal registration guide
   - Parent Portal detail-update guide
   - password-reset guide
@@ -854,17 +854,17 @@ Done when:
   - iPad / Jamf first-response checklist
   - printer symptom matrix
   - classroom AV quick-fix flow
-- [ ] Add a `/knowledge-base-lab` route.
-- [ ] Build a workflow for turning repeated ticket themes into OurDCS-ready draft articles.
-- [ ] Add a rubric for article quality:
+- [ ] **UN-20261024-033-0857** Add a `/knowledge-base-lab` route.
+- [ ] **UN-20261024-033-0858** Build a workflow for turning repeated ticket themes into OurDCS-ready draft articles.
+- [ ] **UN-20261024-033-0859** Add a rubric for article quality:
   - clear title
   - correct audience
   - step order
   - brevity
   - safety/privacy
   - likely deflection value
-- [ ] Store drafts locally and allow Markdown export.
-- [ ] Link module practical outputs into the Knowledge Base Lab.
+- [ ] **UN-20261024-033-0866** Store drafts locally and allow Markdown export.
+- [ ] **UN-20261024-033-0867** Link module practical outputs into the Knowledge Base Lab.
 
 Done when:
 
@@ -873,17 +873,17 @@ Done when:
 
 ## 11. Enhance the PD Log and add the Evidence Pack
 
-- [ ] Keep the existing PD Log route and extend it to link entries with:
+- [ ] **UN-20261024-033-0876** Keep the existing PD Log route and extend it to link entries with:
   - modules
   - scenarios
   - practical outputs
   - focus blocks
-- [ ] Add quick templates for:
+- [ ] **UN-20261024-033-0881** Add quick templates for:
   - scenario practice
   - internal workflow review
   - article/SOP creation
   - reflection on a repeated ticket theme
-- [ ] Improve monthly summaries with:
+- [ ] **UN-20261024-033-0886** Improve monthly summaries with:
   - total minutes
   - modules touched
   - scenarios completed
@@ -892,10 +892,10 @@ Done when:
   - current weak areas
   - suggested next focus
 - [x] Add `/evidence-pack`.
-- [ ] Generate a manager-safe Markdown summary from localStorage.
-- [ ] Include certificate/link placeholders without requiring external systems.
-- [ ] Add copy-to-clipboard support.
-- [ ] Add privacy reminders that exclude confidential ticket, student, staff, or network details.
+- [ ] **UN-20261024-033-0895** Generate a manager-safe Markdown summary from localStorage.
+- [ ] **UN-20261024-033-0896** Include certificate/link placeholders without requiring external systems.
+- [ ] **UN-20261024-033-0897** Add copy-to-clipboard support.
+- [ ] **UN-20261024-033-0898** Add privacy reminders that exclude confidential ticket, student, staff, or network details.
 
 Done when:
 
@@ -903,17 +903,17 @@ Done when:
 
 ## 12. Make readiness graphs evidence-based
 
-- [ ] Keep the readiness routes and charts, but reduce unsupported guesswork.
-- [ ] Rework scoring so readiness uses:
+- [ ] **UN-20261024-033-0906** Keep the readiness routes and charts, but reduce unsupported guesswork.
+- [ ] **UN-20261024-033-0907** Rework scoring so readiness uses:
   - assessment performance
   - scenario completion
   - scenario note quality
   - flashcard retention
   - practical outputs completed
   - repeated weak areas
-- [ ] Label any domain that lacks enough evidence as an estimate.
-- [ ] Adjust weighting so the graphs reflect DCS-relevant performance more than generic theory.
-- [ ] Add tests for readiness math and domain weighting.
+- [ ] **UN-20261024-033-0914** Label any domain that lacks enough evidence as an estimate.
+- [ ] **UN-20261024-033-0915** Adjust weighting so the graphs reflect DCS-relevant performance more than generic theory.
+- [ ] **UN-20261024-033-0916** Add tests for readiness math and domain weighting.
 
 Done when:
 
@@ -921,15 +921,15 @@ Done when:
 
 ## 13. Build the internal-resource companion workflow
 
-- [ ] Add a content-author workflow for safely converting internal DCS knowledge into app content.
-- [ ] Create a source-intake template that captures:
+- [ ] **UN-20261024-033-0924** Add a content-author workflow for safely converting internal DCS knowledge into app content.
+- [ ] **UN-20261024-033-0925** Create a source-intake template that captures:
   - source area
   - system
   - workflow theme
   - privacy review status
   - safe concepts to teach
   - risky details to exclude
-- [ ] Create a repeatable transformation checklist:
+- [ ] **UN-20261024-033-0932** Create a repeatable transformation checklist:
   - extract workflow steps
   - extract common errors
   - extract escalation boundaries
@@ -937,8 +937,8 @@ Done when:
   - write questions
   - write scenario
   - write practical output
-- [ ] Add author notes or internal docs for using Teams posts, Sentral training, OurDCS guides, and local SOPs as source material without copying them verbatim.
-- [ ] Link this workflow from repo docs so future content work stays aligned.
+- [ ] **UN-20261024-033-0940** Add author notes or internal docs for using Teams posts, Sentral training, OurDCS guides, and local SOPs as source material without copying them verbatim.
+- [ ] **UN-20261024-033-0941** Link this workflow from repo docs so future content work stays aligned.
 
 Done when:
 
@@ -946,16 +946,16 @@ Done when:
 
 ## 14. Finish testing, documentation, and release-readiness
 
-- [ ] Run `npm run lint`.
-- [ ] Run `npm run build`.
-- [ ] Run the test suite and add missing tests for:
+- [ ] **UN-20261024-033-0949** Run `npm run lint`.
+- [ ] **UN-20261024-033-0950** Run `npm run build`.
+- [ ] **UN-20261024-033-0951** Run the test suite and add missing tests for:
   - storage migrations
   - scoring
   - spaced repetition
   - scenario note scoring
   - readiness math
   - module completion math
-- [ ] Verify all routes work on desktop and mobile:
+- [ ] **UN-20261024-033-0958** Verify all routes work on desktop and mobile:
   - `/`
   - `/modules`
   - `/strict-quiz`
@@ -968,10 +968,10 @@ Done when:
   - `/settings`
   - `/knowledge-base-lab`
   - `/evidence-pack`
-- [ ] Verify that old routes and existing saved progress still work after migrations.
-- [ ] Review all visible copy for professionalism and clarity.
-- [ ] Review all generated content for privacy safety and Level 1 boundaries.
-- [ ] Update `README.md`, `TODO.md`, and roadmap/audit docs so they match the final shipped behavior.
+- [ ] **UN-20261024-033-0971** Verify that old routes and existing saved progress still work after migrations.
+- [ ] **UN-20261024-033-0972** Review all visible copy for professionalism and clarity.
+- [ ] **UN-20261024-033-0973** Review all generated content for privacy safety and Level 1 boundaries.
+- [ ] **UN-20261024-033-0974** Update `README.md`, `TODO.md`, and roadmap/audit docs so they match the final shipped behavior.
 
 Done when:
 
@@ -983,91 +983,91 @@ Done when:
 
 ## P0: Real DCS Ticket Relevance
 
-- [ ] Add `Parent Portal Registration` module with access-key flow, common blockers, escalation boundaries, and parent-facing note examples.
-- [ ] Add `Parent Portal Details Updates` module covering family amendment requests, urgent exceptions, and admin handoff.
-- [ ] Add `Sentral Support` module covering markbook visibility, parent access keys, reporting-period issues, and safe escalation.
-- [ ] Add `OurDCS / Schoolbox Support` module covering class pages, staff workflow issues, and portal/LMS triage boundaries.
-- [ ] Add `Login and Password Support` module covering username checks, lockouts, expired passwords, self-service reset, and compromise suspicion.
-- [ ] Add `Permissions and Access Requests` module covering shared drives, software access, approvals, role context, and least privilege.
-- [ ] Add `Website Filtering and Unblock Requests` module covering capture of block details, justification, lead time, and workflow.
-- [ ] Add `New User Onboarding` module covering staff, student, and prac-teacher request completeness and day-one validation.
-- [ ] Add `Teams, SharePoint, and OneDrive Support` module covering common access, sync, sharing, and ownership issues at Level 1 scope.
-- [ ] Add `iPad and Jamf Workflow Basics` module covering first-line triage, ownership boundaries, and evidence capture.
+- [ ] **UN-20261024-033-0986** Add `Parent Portal Registration` module with access-key flow, common blockers, escalation boundaries, and parent-facing note examples.
+- [ ] **UN-20261024-033-0987** Add `Parent Portal Details Updates` module covering family amendment requests, urgent exceptions, and admin handoff.
+- [ ] **UN-20261024-033-0988** Add `Sentral Support` module covering markbook visibility, parent access keys, reporting-period issues, and safe escalation.
+- [ ] **UN-20261024-033-0989** Add `OurDCS / Schoolbox Support` module covering class pages, staff workflow issues, and portal/LMS triage boundaries.
+- [ ] **UN-20261024-033-0990** Add `Login and Password Support` module covering username checks, lockouts, expired passwords, self-service reset, and compromise suspicion.
+- [ ] **UN-20261024-033-0991** Add `Permissions and Access Requests` module covering shared drives, software access, approvals, role context, and least privilege.
+- [ ] **UN-20261024-033-0992** Add `Website Filtering and Unblock Requests` module covering capture of block details, justification, lead time, and workflow.
+- [ ] **UN-20261024-033-0993** Add `New User Onboarding` module covering staff, student, and prac-teacher request completeness and day-one validation.
+- [ ] **UN-20261024-033-0994** Add `Teams, SharePoint, and OneDrive Support` module covering common access, sync, sharing, and ownership issues at Level 1 scope.
+- [ ] **UN-20261024-033-0995** Add `iPad and Jamf Workflow Basics` module covering first-line triage, ownership boundaries, and evidence capture.
 
 ## P0: Deepen Existing High-Frequency Themes
 
-- [ ] Expand `Printer Troubleshooting` with PaperCut / Follow-Me release, photocopier faults, queue-vs-device reasoning, and service-call handoff.
-- [ ] Expand `Classroom Display and ViewBoard Troubleshooting` with projector inputs, Windows+P, audio-path faults, SMART/touch calibration, and lamp/thermal issues.
-- [ ] Expand `DNS, DHCP, Gateway, and IP Basics` with Wi-Fi onboarding, SSID mistakes, signal checks, forget/rejoin, and cross-device comparison.
-- [ ] Expand `DCS IT Support Foundations` with multi-campus context, role boundaries, and where DCS workflow knowledge usually lives internally.
+- [ ] **UN-20261024-033-0999** Expand `Printer Troubleshooting` with PaperCut / Follow-Me release, photocopier faults, queue-vs-device reasoning, and service-call handoff.
+- [ ] **UN-20261024-033-1000** Expand `Classroom Display and ViewBoard Troubleshooting` with projector inputs, Windows+P, audio-path faults, SMART/touch calibration, and lamp/thermal issues.
+- [ ] **UN-20261024-033-1001** Expand `DNS, DHCP, Gateway, and IP Basics` with Wi-Fi onboarding, SSID mistakes, signal checks, forget/rejoin, and cross-device comparison.
+- [ ] **UN-20261024-033-1002** Expand `DCS IT Support Foundations` with multi-campus context, role boundaries, and where DCS workflow knowledge usually lives internally.
 
 ## P0: Retrieval-First Learning Design
 
 - [X] Rework module structure so each topic starts with questions before explanatory reading.
-- [ ] Define a standard module pattern: diagnostic questions, flashcards, short-answer retrieval, explain-it-simply prompt, scenario, and practical output.
-- [ ] Make flashcards and practice questions the primary way to learn DCS workflow areas that come from internal resources.
-- [ ] Add explicit support for converting internal DCS workflow knowledge into safe app prompts without copying sensitive documents into the repo.
+- [ ] **UN-20261024-033-1007** Define a standard module pattern: diagnostic questions, flashcards, short-answer retrieval, explain-it-simply prompt, scenario, and practical output.
+- [ ] **UN-20261024-033-1008** Make flashcards and practice questions the primary way to learn DCS workflow areas that come from internal resources.
+- [ ] **UN-20261024-033-1009** Add explicit support for converting internal DCS workflow knowledge into safe app prompts without copying sensitive documents into the repo.
 
 ## P1: Stronger Scenario Lab
 
-- [ ] Add scenario: HDMI works but no audio.
-- [ ] Add scenario: student laptop has 169.254 IP.
-- [ ] Add scenario: printer jobs stuck in queue.
-- [ ] Add scenario: laser printer toner rubs off.
-- [ ] Add scenario: guest Wi-Fi segmentation rules.
-- [ ] Add scenario: phishing email reported by staff.
-- [ ] Add scenario: Parent Portal registration problem.
-- [ ] Add scenario: Sentral access-key or markbook issue.
-- [ ] Add scenario: password lockout or self-service reset failure.
-- [ ] Add scenario: new user onboarding with missing system access.
-- [ ] Require a Jira-style escalation note at the end of every scenario.
-- [ ] Score scenario notes with a rubric for symptom clarity, scope, steps tried, urgency, and privacy-safe wording.
+- [ ] **UN-20261024-033-1013** Add scenario: HDMI works but no audio.
+- [ ] **UN-20261024-033-1014** Add scenario: student laptop has 169.254 IP.
+- [ ] **UN-20261024-033-1015** Add scenario: printer jobs stuck in queue.
+- [ ] **UN-20261024-033-1016** Add scenario: laser printer toner rubs off.
+- [ ] **UN-20261024-033-1017** Add scenario: guest Wi-Fi segmentation rules.
+- [ ] **UN-20261024-033-1018** Add scenario: phishing email reported by staff.
+- [ ] **UN-20261024-033-1019** Add scenario: Parent Portal registration problem.
+- [ ] **UN-20261024-033-1020** Add scenario: Sentral access-key or markbook issue.
+- [ ] **UN-20261024-033-1021** Add scenario: password lockout or self-service reset failure.
+- [ ] **UN-20261024-033-1022** Add scenario: new user onboarding with missing system access.
+- [ ] **UN-20261024-033-1023** Require a Jira-style escalation note at the end of every scenario.
+- [ ] **UN-20261024-033-1024** Score scenario notes with a rubric for symptom clarity, scope, steps tried, urgency, and privacy-safe wording.
 
 ## P1: Stronger Assessment Engine
 
-- [ ] Expand the strict question bank to 80+ questions with plausible distractors.
-- [ ] Weight new questions toward the actual top DCS enquiry themes, not just networking concepts.
-- [ ] Add more Analyse / Evaluate / Create style questions.
-- [ ] Add more free-response and order-the-steps items for access requests, onboarding, Sentral, and password support.
-- [ ] Revisit weak topics later in mixed contexts instead of only re-asking same-topic items.
-- [ ] Add Feynman-style explain-back prompts to every major module area.
-- [ ] Add concept-sorting exercises for systems, symptoms, and ownership boundaries.
-- [ ] Add mnemonic and memory-sheet prompts for ports, processes, and platform distinctions.
-- [ ] Add guided Cornell-style reflection prompts at the end of study blocks.
-- [ ] Add SQ3R-style support for turning internal readings into questions and summaries.
+- [ ] **UN-20261024-033-1028** Expand the strict question bank to 80+ questions with plausible distractors.
+- [ ] **UN-20261024-033-1029** Weight new questions toward the actual top DCS enquiry themes, not just networking concepts.
+- [ ] **UN-20261024-033-1030** Add more Analyse / Evaluate / Create style questions.
+- [ ] **UN-20261024-033-1031** Add more free-response and order-the-steps items for access requests, onboarding, Sentral, and password support.
+- [ ] **UN-20261024-033-1032** Revisit weak topics later in mixed contexts instead of only re-asking same-topic items.
+- [ ] **UN-20261024-033-1033** Add Feynman-style explain-back prompts to every major module area.
+- [ ] **UN-20261024-033-1034** Add concept-sorting exercises for systems, symptoms, and ownership boundaries.
+- [ ] **UN-20261024-033-1035** Add mnemonic and memory-sheet prompts for ports, processes, and platform distinctions.
+- [ ] **UN-20261024-033-1036** Add guided Cornell-style reflection prompts at the end of study blocks.
+- [ ] **UN-20261024-033-1037** Add SQ3R-style support for turning internal readings into questions and summaries.
 
 ## P1: Deeper Technical Judgement
 
-- [ ] Deepen M365 / Entra / Intune content with sign-in blocking, session revocation, sign-in logs, MFA, shared mailbox cleanup, and managed mobile retire/wipe concepts.
-- [ ] Deepen Group Policy content with startup, sign-in, background refresh, OU placement, security filtering, drive mapping, and printer deployment.
-- [ ] Deepen VLAN content with source-destination allow/block rule writing and guest-internet-only designs.
-- [ ] Deepen cloud content with DaaS / hosted-desktop school scenarios and BYOD trade-off reasoning.
+- [ ] **UN-20261024-033-1041** Deepen M365 / Entra / Intune content with sign-in blocking, session revocation, sign-in logs, MFA, shared mailbox cleanup, and managed mobile retire/wipe concepts.
+- [ ] **UN-20261024-033-1042** Deepen Group Policy content with startup, sign-in, background refresh, OU placement, security filtering, drive mapping, and printer deployment.
+- [ ] **UN-20261024-033-1043** Deepen VLAN content with source-destination allow/block rule writing and guest-internet-only designs.
+- [ ] **UN-20261024-033-1044** Deepen cloud content with DaaS / hosted-desktop school scenarios and BYOD trade-off reasoning.
 
 ## P2: Support-Quality Outputs
 
-- [ ] Add practical output templates for Parent Portal, Sentral, login help, Wi-Fi onboarding, unblock requests, and onboarding checklists.
-- [ ] Add a self-service article authoring workflow so repeated ticket themes can become OurDCS-ready content.
-- [ ] Add a knowledge-base or SOP practice route for writing support articles, not just notes.
+- [ ] **UN-20261024-033-1048** Add practical output templates for Parent Portal, Sentral, login help, Wi-Fi onboarding, unblock requests, and onboarding checklists.
+- [ ] **UN-20261024-033-1049** Add a self-service article authoring workflow so repeated ticket themes can become OurDCS-ready content.
+- [ ] **UN-20261024-033-1050** Add a knowledge-base or SOP practice route for writing support articles, not just notes.
 
 ## P2: Remaining Backlog From `_Jira analysis.txt`
 
-- [ ] Add `/evidence-pack`.
-- [ ] Add `Start tiny`.
-- [ ] Add `20-minute focus block`.
-- [ ] Add `I'm overwhelmed` mode.
-- [ ] Add end-of-session reflection prompts.
-- [ ] Improve readiness scoring so more domains are based on real evidence rather than light estimates.
-- [ ] Add explicit Leitner-style flashcard buckets or box labels on top of the current spaced repetition flow.
-- [ ] Add a Pomodoro-style study timer tied to one clear task.
-- [ ] Add micro-learning task cards sized for short quiet windows, with one question set or one workflow at a time.
+- [ ] **UN-20261024-033-1054** Add `/evidence-pack`.
+- [ ] **UN-20261024-033-1055** Add `Start tiny`.
+- [ ] **UN-20261024-033-1056** Add `20-minute focus block`.
+- [ ] **UN-20261024-033-1057** Add `I'm overwhelmed` mode.
+- [ ] **UN-20261024-033-1058** Add end-of-session reflection prompts.
+- [ ] **UN-20261024-033-1059** Improve readiness scoring so more domains are based on real evidence rather than light estimates.
+- [ ] **UN-20261024-033-1060** Add explicit Leitner-style flashcard buckets or box labels on top of the current spaced repetition flow.
+- [ ] **UN-20261024-033-1061** Add a Pomodoro-style study timer tied to one clear task.
+- [ ] **UN-20261024-033-1062** Add micro-learning task cards sized for short quiet windows, with one question set or one workflow at a time.
 
 ## Guardrails
 
-- [ ] Keep all new training Level 1-safe and privacy-safe.
-- [ ] Teach real DCS workflow, but do not simulate unsafe production changes as if Josh is authorized to perform them.
-- [ ] Prefer triage, first-line troubleshooting, evidence capture, communication, and escalation quality over fake-admin practice.
-- [ ] Do not copy confidential internal DCS procedures, credentials, student details, staff details, or private system data into app content.
-- [ ] Use internal DCS documents, Teams posts, and school-owned resources as source material for practice design, not as content to reproduce verbatim.
+- [ ] **UN-20261024-033-1066** Keep all new training Level 1-safe and privacy-safe.
+- [ ] **UN-20261024-033-1067** Teach real DCS workflow, but do not simulate unsafe production changes as if Josh is authorized to perform them.
+- [ ] **UN-20261024-033-1068** Prefer triage, first-line troubleshooting, evidence capture, communication, and escalation quality over fake-admin practice.
+- [ ] **UN-20261024-033-1069** Do not copy confidential internal DCS procedures, credentials, student details, staff details, or private system data into app content.
+- [ ] **UN-20261024-033-1070** Use internal DCS documents, Teams posts, and school-owned resources as source material for practice design, not as content to reproduce verbatim.
 
 
 
@@ -1075,19 +1075,19 @@ Done when:
 
 Features to move DCS Prep from a local tool to a professional-grade learning platform.
 
-* [ ] **Soft Skills Integration (LinkedIn Learning style)**:
+* [ ] **UN-20261024-033-1078** **Soft Skills Integration (LinkedIn Learning style)**:
     * Add "Soft Skills for DCS Support" module covering empathy, de-escalation, and clear communication with staff/students.
-* [ ] **Gamified Reinforcement (Axonify/Sololearn style)**:
+* [ ] **UN-20261024-033-1080** **Gamified Reinforcement (Axonify/Sololearn style)**:
     * [x] Implement a "Daily Streak" counter on the dashboard.
     * [x] Add local-first points and task badges for completed learning work.
     * [x] Add "Bite-Sized Daily Challenge" (a single 1-minute MCQ) that resets every 24 hours.
-* [ ] **Interactive Learning (Coursera/Sololearn style)**:
+* [ ] **UN-20261024-033-1084** **Interactive Learning (Coursera/Sololearn style)**:
     * Add an "In-App Playground" for running basic Python snippets and HTML/CSS previews related to DCS tasks.
-* [ ] **Structured Learning Paths (O'Reilly/Udacity style)**:
+* [ ] **UN-20261024-033-1086** **Structured Learning Paths (O'Reilly/Udacity style)**:
     * Group modules into "Career Paths" (e.g., "DCS Network Specialist", "Security Guard", "Classroom Tech Master").
-* [ ] **Project-Based Mastery (Udacity style)**:
+* [ ] **UN-20261024-033-1088** **Project-Based Mastery (Udacity style)**:
     * Add "Final Projects" for each path that require creating a complex artifact (e.g., a full school-wide Wi-Fi audit plan).
-* [ ] **Micro-Learning Optimization (EdApp style)**:
+* [ ] **UN-20261024-033-1090** **Micro-Learning Optimization (EdApp style)**:
     * Conduct a "One-Thumb" UI audit to ensure every page is perfectly usable on a mobile phone during a 2-minute quiet window.
 
 ---
