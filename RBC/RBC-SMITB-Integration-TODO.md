@@ -195,10 +195,10 @@ _Added complementary DCS workflow scenarios in `src/data/scenarios.ts` (HDMI aud
 - [x] Add fallback topic boxes for subjects that do not yet have exact weekly SLG rows.
 - [x] Add the 24-week Academic PD implementation roadmap to `/academic-pd`.
 - [x] Add Academic PD to app navigation.
-- [ ] Add exact weekly SLG topic rows for CSE1IIT once the full week-by-week rows are available.
+- [ ] **TASK-00546** Add exact weekly SLG topic rows for CSE1IIT once the full week-by-week rows are available.
 - [x] Add exact weekly SLG topic rows for CSE1ICB, STA1DCT, CSE1OOF, CSE1IS, and CSE3PE where the source has enough detail.
 - [x] Add exact weekly/topic boxes for SMITB subjects after confirming which subjects are actively taught at Bendigo.
-- [ ] Add richer resource sets for each non-CSE1PE subject.
+- [ ] **TASK-00549** Add richer resource sets for each non-CSE1PE subject.
 
 _Latest pass: where exact weekly rows were not present in the extracted source, the app now uses assessment-driven topic boxes from official SLG assessment rows rather than inventing unsupported week-by-week content._
 
@@ -236,7 +236,7 @@ _Latest pass: where exact weekly rows were not present in the extracted source, 
   - `npm test` or the repo's available test command.
   - `npm run lint` if configured.
   - `npm run build` before considering the integration complete.
-- [ ] Manually inspect the new/updated UI in browser at desktop and mobile widths.
+- [ ] **TASK-00566** Manually inspect the new/updated UI in browser at desktop and mobile widths.
 
 ## 10. Documentation
 
@@ -244,7 +244,7 @@ _Latest pass: where exact weekly rows were not present in the extracted source, 
 - [x] Add a change log noting which app files were changed.
 - [x] Add a content-coverage matrix showing which SILOs are covered by modules, scenarios, quizzes, and practical outputs.
 - [x] Add a "not yet covered" section for lower-priority or missing-source subjects.
-- [ ] Update the main README or internal docs if a new RBC route, data file, or content workflow is introduced.
+- [ ] **TASK-00571** Update the main README or internal docs if a new RBC route, data file, or content workflow is introduced.
 
 ## 11. Suggested implementation stages
 
