@@ -98,6 +98,7 @@ describe('gamification', () => {
       progress,
       modules,
       {
+        ...getInitialGamificationState('2026-05-10T00:00:00.000Z'),
         points: 0,
         studyStreakDays: 0,
         badges: {

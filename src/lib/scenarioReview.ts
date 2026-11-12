@@ -25,7 +25,17 @@ export const scenarioRevisitModuleMap: Record<string, string> = {
   'password-lockout-after-travel': 'login-password-support',
   'new-staff-missing-teams-access': 'new-user-onboarding',
   'camera-windows-hello-accessibility-triage': 'smitb-computer-vision-accessibility-support',
-  'dashboard-log-interpretation-trend-triage': 'rbc-data-literacy-dashboard-log-reasoning'
+  'dashboard-log-interpretation-trend-triage': 'rbc-data-literacy-dashboard-log-reasoning',
+  'msp-m365-mfa-locked': 'login-password-lockout-mfa-account-basics',
+  'msp-sharepoint-sync-conflict': 'm365-teams-sharepoint-onedrive-basics',
+  'msp-onedrive-device-replacement': 'm365-teams-sharepoint-onedrive-basics',
+  'msp-backup-alert-first-response': 'ticket-notes-escalation-quality',
+  'msp-shared-mailbox-permission': 'permissions-access-requests',
+  'msp-single-workstation-internet': 'dns-dhcp-gateway-ip-basics',
+  'msp-outlook-access-issue': 'login-password-support',
+  'msp-new-starter-setup': 'new-user-onboarding-access-checks',
+  'msp-suspicious-email-report': 'cybersecurity-incident-response-nist',
+  'msp-device-performance-pressure': 'aplus-core1-troubleshooting'
 };
 
 export function calculateScenarioNoteScore(checks: Record<string, boolean>) {
