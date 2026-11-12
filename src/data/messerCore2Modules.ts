@@ -197,7 +197,7 @@ const topicSpecificNotes: Record<string, string> = {
   'Windows Firewall':
     'Focus on recognising firewall symptoms and policy boundaries. Level 1 can gather evidence and explain likely blocking, but should not improvise production firewall rules.',
   'Configuring Windows Firewall':
-    'Focus on profile, rule, and application-blocking awareness. The safe DCSPrep outcome is evidence-rich escalation, not unauthorised firewall editing.'
+    'Focus on profile, rule, and application-blocking awareness. The safe DCSPrep outcome is evidence-rich escalation, not unauthorised firewall editing.',
   "Operating Systems Overview": "Compare the kernel, file system, drivers, user account and application layers. A login failure and a bootloader failure demand different tests; first establish exactly when failure occurs.",
   "Installing Operating Systems": "Distinguish in-place upgrade, repair install and clean install. Identify storage backups, licence, boot mode and device drivers before authorising an irreversible reinstall.",
   "Upgrading Windows": "Check hardware eligibility, edition, TPM/Secure Boot, drivers and rollback window. A supported upgrade is not the same as forcing an install that bypasses compatibility checks.",
