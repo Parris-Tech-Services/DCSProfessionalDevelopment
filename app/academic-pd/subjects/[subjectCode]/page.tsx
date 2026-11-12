@@ -1,15 +1,9 @@
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { academicSubjects, getAcademicSubjectByCode } from '../../../../src/data/academicSubjects';
 import type { AcademicSubject, AcademicWeeklyModule } from '../../../../src/types/academic';
 
-const AcademicSubjectAssessment = dynamic(
-  () => import('../../../../src/components/academic/AcademicSubjectAssessment'),
-  {
-    ssr: false
-  }
-);
+import AcademicSubjectAssessment from '../../../../src/components/academic/AcademicSubjectAssessmentLazy';
 
 type Params = {
   subjectCode: string;
@@ -51,7 +45,8 @@ function getFallbackWeeklyModules(subject: AcademicSubject): AcademicWeeklyModul
   }));
 }
 
-export default function AcademicSubjectPage({ params }: { params: Params }) {
+export default async function AcademicSubjectPage(props: { params: Promise<Params> }) {
+  const params = await props.params;
   const normalizedCode = params.subjectCode.trim().toLowerCase();
   const subject = getAcademicSubjectByCode(normalizedCode);
 
