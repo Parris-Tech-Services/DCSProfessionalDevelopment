@@ -3,12 +3,13 @@ import SearchUsageTracker from '../../src/components/usage/SearchUsageTracker';
 import { searchApp } from '../../src/lib/searchIndex';
 
 type SearchPageProps = {
-  searchParams?: {
+  searchParams?: Promise<{
     q?: string;
-  };
+  }>;
 };
 
-export default function SearchPage({ searchParams }: SearchPageProps) {
+export default async function SearchPage(props: SearchPageProps) {
+  const searchParams = await props.searchParams;
   const query = (searchParams?.q ?? '').trim();
   const results = searchApp(query);
 

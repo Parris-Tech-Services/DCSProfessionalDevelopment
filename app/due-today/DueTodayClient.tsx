@@ -87,7 +87,7 @@ function PomodoroPanel() {
   );
 }
 
-export default function DueTodayPage({ searchParams }: { searchParams?: { mode?: string | string[] } }) {
+export default function DueTodayClient({ searchParams }: { searchParams?: { mode?: string | string[] } }) {
   const [progress, setProgress] = useState<UserProgress>(() => getInitialProgressSnapshot(modules));
   const [hasHydratedProgress, setHasHydratedProgress] = useState(false);
   const [revealedCards, setRevealedCards] = useState<Record<string, boolean>>({});
