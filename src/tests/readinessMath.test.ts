@@ -5,6 +5,8 @@ import type { UserProgress } from '../lib/progress';
 function buildProgress(noteScore?: number): UserProgress {
   return {
     schemaVersion: 2,
+    selectedWorkContext: 'DCS / School IT',
+    reflectionJournal: {},
     modules: {},
     assessmentAttempts: [
       {
@@ -76,8 +78,8 @@ function buildProgress(noteScore?: number): UserProgress {
 
 describe('readiness math', () => {
   it('uses scenario note evidence in score blending', () => {
-    const withoutScenario = getReadinessProfile('aPlus', buildProgress(undefined));
-    const withScenario = getReadinessProfile('aPlus', buildProgress(1));
+    const withoutScenario = getReadinessProfile('compTIAaPlus', buildProgress(undefined));
+    const withScenario = getReadinessProfile('compTIAaPlus', buildProgress(1));
     const withoutAverage = withoutScenario.reduce((sum, row) => sum + row.score, 0) / withoutScenario.length;
     const withAverage = withScenario.reduce((sum, row) => sum + row.score, 0) / withScenario.length;
 

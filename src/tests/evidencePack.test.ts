@@ -7,6 +7,8 @@ import type { UserProgress } from '../lib/progress';
 const monthKey = getMonthKey(new Date());
 const progressBase = {
   schemaVersion: 2,
+  selectedWorkContext: 'DCS / School IT',
+  reflectionJournal: {},
   modules: {},
   assessmentAttempts: [],
   weakTopicReviews: {},
@@ -54,16 +56,15 @@ describe('manager-safe markdown exports', () => {
   it('includes evidence links when includeLinks is enabled', () => {
     const markdown = buildEvidencePackMarkdown(progressBase, monthKey);
 
-    expect(markdown).toContain('- Include optional links: Yes');
-    expect(markdown).toContain('- **Evidence:** https://example.com/reflection');
+    expect(markdown).toContain('- **Evidence Reference:** https://example.com/reflection');
   });
 
   it('labels RBC and SMITB evidence as informal academic alignment', () => {
     const markdown = buildEvidencePackMarkdown(progressBase, monthKey);
 
-    expect(markdown).toContain('- Academic alignment evidence: Informal RBC/SMITB PD alignment included');
-    expect(markdown).toContain('RBC/SMITB references in this export are informal DCSPrep professional-development alignment notes.');
-    expect(markdown).toContain('do not claim formal university credit, certification, or official assessment completion');
+    expect(markdown).toContain('## Academic & Certification Alignment');
+    expect(markdown).toContain('Informal alignment with RBC/SMITB academic frameworks detected.');
+    expect(markdown).toContain('do not represent formal university credit unless separately verified');
   });
 
   it('omits raw evidence links when includeLinks is disabled', () => {
@@ -76,7 +77,7 @@ describe('manager-safe markdown exports', () => {
     };
     const markdown = buildEvidencePackMarkdown(progressWithoutLinks, monthKey);
 
-    expect(markdown).toContain('- Include optional links: No');
-    expect(markdown).toContain('(links omitted as requested)');
+    expect(markdown).not.toContain('https://example.com/reflection');
+    expect(markdown).not.toContain('Evidence Reference');
   });
 });
