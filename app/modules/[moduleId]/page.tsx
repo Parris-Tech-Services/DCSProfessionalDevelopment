@@ -1,7 +1,8 @@
 import ModuleDetail from '../../../src/components/modules/ModuleDetail';
 import { getModuleById, getModuleQuestions } from '../../../src/data/modules';
 
-export default function ModulePage({ params }: { params: { moduleId: string } }) {
+export default async function ModulePage(props: { params: Promise<{ moduleId: string }> }) {
+  const params = await props.params;
   const moduleData = getModuleById(params.moduleId);
 
   if (!moduleData) {

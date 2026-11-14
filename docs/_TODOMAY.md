@@ -24,7 +24,7 @@ Implementation status, May 14, 2026:
 - [x] Added a dashboard progression panel showing points, streak, badge count, recent/next badges, and next milestone.
 - [x] Added gamification tests in `src/tests/gamification.test.ts`.
 - [x] Wired a deterministic daily MCQ challenge onto the dashboard for a 1-minute practice rep.
-- [ ] Backend leaderboards, social challenges, team challenges, and peer competition remain open because the app is currently local-first with no multi-user backend.
+- [ ] **UN-20261024-034-0027** Backend leaderboards, social challenges, team challenges, and peer competition remain open because the app is currently local-first with no multi-user backend.
 3. Mobile and offline access
 The EdApp offline‑mode article explains that offline mode allows learners to download training to their devices and complete modules without internet connectivity; progress syncs later, enabling training “anytime and anywhere” and reducing data costs[14]. This is valuable for busy support staff who may study during commutes or while waiting for a ticket. Both apps are currently web‑only and require stable internet.
 Improvements:
@@ -37,7 +37,7 @@ Implementation status, May 14, 2026:
 - [x] Added a production service worker that precaches the core app shell and falls back to the dashboard for offline navigation.
 - [x] Added service worker registration through `src/components/pwa/ServiceWorkerRegistration.tsx`.
 - [x] Added a PWA manifest test in `src/tests/pwa.test.ts`.
-- [ ] Per-module offline download controls, IndexedDB content packs, background sync, and push notifications remain open.
+- [ ] **UN-20261024-034-0040** Per-module offline download controls, IndexedDB content packs, background sync, and push notifications remain open.
 4. Depth and cognitive load
 Microlearning’s strength is in delivering short, focused lessons. However, complex topics require more depth. Training‑Central emphasises that microlearning reduces cognitive load by focusing on a single outcome[15], but this also limits how much content can be delivered at once. Micro sessions should not replace more comprehensive study. Additionally, the Learning Guild warns that compressing content without considering cognitive load can cause confusion and “extraneous cognitive overload”[16].
 Mitigations:
@@ -168,8 +168,8 @@ Prompts for Laptop 2 (working on the DCSProfessionalDevelopment app)
 
 #### **2. Gamification Enhancements**
 - [x] **Leaderboard**: Created `Leaderboard.tsx` component to display top users (mocked for local-first).
-- [ ] **Social Challenges**: Logic for peer-to-peer or team-based challenges remains open.
-- [ ] **Micro-rewards**: Digital stickers or small point rewards for reflection and peer help remain open.
+- [ ] **UN-20261024-034-0171** **Social Challenges**: Logic for peer-to-peer or team-based challenges remains open.
+- [ ] **UN-20261024-034-0172** **Micro-rewards**: Digital stickers or small point rewards for reflection and peer help remain open.
 
 #### **3. Mobile & Offline Capabilities**
 - [x] **Offline Downloads**: Implemented `useOfflineDownload` hook and IndexedDB storage for module content via `src/lib/offlineStorage.ts`.
@@ -178,7 +178,7 @@ Prompts for Laptop 2 (working on the DCSProfessionalDevelopment app)
 #### **4. Emotional & Embodied Learning**
 - [x] **Enhanced Mindfulness**: Added body-scan prompts (shoulder/jaw tension) to `MindfulnessPause.tsx`.
 - [x] **Flow Integration**: Integrated `MindfulnessPause` into the end of every learning module assessment.
-- [ ] **Reflection Journal**: Recording thoughts/emotions after scenarios remains open.
+- [ ] **UN-20261024-034-0181** **Reflection Journal**: Recording thoughts/emotions after scenarios remains open.
 
 #### **5. External Certification & Practice**
 - [x] **Practice Exams**: Created `PracticeExam.tsx` and `examQuestions.json` for CompTIA A+ and ITIL.
@@ -188,7 +188,7 @@ Prompts for Laptop 2 (working on the DCSProfessionalDevelopment app)
 - [x] **RBAC**: Implemented logic for `admin`, `educator`, and `learner` roles via `AuthProvider.tsx`.
 - [x] **SSO/MFA**: Added placeholder logic and UI for Azure AD integration in Settings.
 - [x] **Encryption**: Implemented `secureStorage.ts` for simple XOR encryption of LocalStorage data.
-- [ ] **Accessibility Audit**: Site-wide `eslint-plugin-jsx-a11y` audit remains open.
+- [ ] **UN-20261024-034-0191** **Accessibility Audit**: Site-wide `eslint-plugin-jsx-a11y` audit remains open.
 
 ---
 Final considerations

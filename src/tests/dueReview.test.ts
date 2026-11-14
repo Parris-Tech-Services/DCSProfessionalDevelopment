@@ -15,6 +15,8 @@ describe('due review aggregation', () => {
 
     const progress: UserProgress = {
       schemaVersion: 2,
+      selectedWorkContext: 'DCS / School IT',
+      reflectionJournal: {},
       modules: {
         [trainingModule.id]: {
           sectionsRead: Object.fromEntries(trainingModule.sections.map((section) => [section.id, false])),
