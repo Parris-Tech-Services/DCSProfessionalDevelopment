@@ -34,7 +34,7 @@ const AssessmentSession = dynamic(() => import('../assessment/AssessmentSession'
 
 function renderMarkdownParagraphs(markdown: string) {
   return markdown.split(/\n\n+/).map((paragraph, index) => (
-    <p key={index} className="mt-4 leading-7 text-slate-700">
+    <p key={index} className="mt-4 leading-7 text-slate-700 whitespace-pre-line">
       {paragraph}
     </p>
   ));

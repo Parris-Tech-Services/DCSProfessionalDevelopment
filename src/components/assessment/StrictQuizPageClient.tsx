@@ -1,7 +1,8 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getStrictQuizQuestions } from '../../data/questions';
+import type { AssessmentQuestion } from '../../types/assessment';
 import AssessmentSession from './AssessmentSession';
 
 type StrictQuizPageClientProps = {
@@ -11,7 +12,16 @@ type StrictQuizPageClientProps = {
 export default function StrictQuizPageClient({ weakTopic }: StrictQuizPageClientProps) {
   const [questionCount, setQuestionCount] = useState<8 | 12 | 16>(12);
 
-  const questions = useMemo(() => getStrictQuizQuestions(weakTopic, questionCount), [questionCount, weakTopic]);
+  // The question set is shuffled with Math.random(), so it must be chosen after mount. Picking it during render
+  // gave the server and the browser different questions (React hydration errors #418/#423/#425).
+  const [session, setSession] = useState<{ key: string; questions: AssessmentQuestion[] } | null>(null);
+
+  useEffect(() => {
+    setSession({
+      key: `${weakTopic ?? 'all'}-${questionCount}`,
+      questions: getStrictQuizQuestions(weakTopic, questionCount)
+    });
+  }, [questionCount, weakTopic]);
 
   return (
     <div className="space-y-6 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
@@ -43,13 +53,17 @@ export default function StrictQuizPageClient({ weakTopic }: StrictQuizPageClient
         </div>
       </div>
 
-      <AssessmentSession
-        key={`${weakTopic ?? 'all'}-${questionCount}`}
-        questions={questions}
-        source="strict-quiz"
-        title="Strict quiz session"
-        description="Includes MCQ, short-answer, order-steps, scenario-response, and explain-it-simply prompts."
-      />
+      {session ? (
+        <AssessmentSession
+          key={session.key}
+          questions={session.questions}
+          source="strict-quiz"
+          title="Strict quiz session"
+          description="Includes MCQ, short-answer, order-steps, scenario-response, and explain-it-simply prompts."
+        />
+      ) : (
+        <p className="text-sm text-slate-600">Preparing your questions…</p>
+      )}
     </div>
   );
 }

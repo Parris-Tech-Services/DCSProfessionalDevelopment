@@ -10,6 +10,8 @@ describe('moduleMath', () => {
   it('returns zero when nothing is completed', () => {
     const progress: UserProgress = {
       schemaVersion: 2,
+      selectedWorkContext: 'DCS / School IT',
+      reflectionJournal: {},
       modules: {
         [trainingModule.id]: {
           sectionsRead: Object.fromEntries(trainingModule.sections.map((section) => [section.id, false])),
@@ -49,6 +51,8 @@ describe('moduleMath', () => {
   it('scores a partially completed module', () => {
     const progress: UserProgress = {
       schemaVersion: 2,
+      selectedWorkContext: 'DCS / School IT',
+      reflectionJournal: {},
       modules: {
         [trainingModule.id]: {
           sectionsRead: Object.fromEntries(
