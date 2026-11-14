@@ -103,6 +103,69 @@ export const m365FilesModule: TrainingModule = {
       reviewSchedule,
       recommendedModuleId: 'm365-teams-sharepoint-onedrive-basics',
       weakTopic: 'dcs-teams-sharepoint-onedrive'
+    },
+    {
+      type: 'mcq',
+      id: 'm365-q2',
+      prompt: 'A teacher says a OneDrive file shows a red X and will not sync. What does the icon tell you?',
+      domain: 'Cloud and Platforms',
+      difficulty: 'foundation',
+      explanation: 'A red X on a OneDrive item means a sync error has occurred for that file or folder.',
+      modelAnswer: 'Treat the red X as a sync error: open the OneDrive activity centre, read the error, and fix the cause (name, path, permission or space) rather than copying the file elsewhere.',
+      commonMistakes: ['Assuming the file is safely backed up', 'Deleting and re-adding the file straight away'],
+      options: [
+        { id: 'a', label: 'The file is Online Only and not taking up local space.' },
+        { id: 'b', label: 'A sync error has occurred.' },
+        { id: 'c', label: 'The file is shared with everyone in the Team.' },
+        { id: 'd', label: 'The file has been safely uploaded.' }
+      ],
+      correctOptionId: 'b',
+      dcsContext: 'Teachers often panic about missing work when a sync icon changes; naming the icon calmly is the first step.',
+      reviewSchedule,
+      recommendedModuleId: 'm365-teams-sharepoint-onedrive-basics',
+      weakTopic: 'dcs-teams-sharepoint-onedrive'
+    },
+    {
+      type: 'mcq',
+      id: 'm365-q3',
+      prompt: 'A user wants to clear out a synced Team folder from their laptop. What is the main risk of deleting it?',
+      domain: 'Cloud and Platforms',
+      difficulty: 'stretch',
+      explanation: 'Deleting a synced folder can delete the files from the cloud for everyone in that Team.',
+      modelAnswer: 'Do not delete a synced folder to tidy local storage. Use Stop sync or Free up space instead, so the shared copy in SharePoint is untouched.',
+      commonMistakes: ['Thinking the delete only affects the local copy', 'Emptying the recycle bin to make space'],
+      options: [
+        { id: 'a', label: 'It only removes the local copy, so there is no risk.' },
+        { id: 'b', label: 'It will break the user\'s Wi-Fi connection.' },
+        { id: 'c', label: 'It deletes the files from the cloud for everyone in that Team.' },
+        { id: 'd', label: 'It resets the user\'s password.' }
+      ],
+      correctOptionId: 'c',
+      dcsContext: 'Shared Team files belong to the whole team, so a careless delete affects colleagues, not just the one laptop.',
+      reviewSchedule,
+      recommendedModuleId: 'm365-teams-sharepoint-onedrive-basics',
+      weakTopic: 'dcs-teams-sharepoint-onedrive'
+    },
+    {
+      type: 'mcq',
+      id: 'm365-q4',
+      prompt: 'A user gets \'Access Denied\' on a shared folder. What should you check first?',
+      domain: 'Cloud and Platforms',
+      difficulty: 'stretch',
+      explanation: 'Access to shared folders is controlled by group membership and Team ownership.',
+      modelAnswer: 'Check the user\'s group membership in Entra ID or the Team owners list, and confirm they are a member, before changing any permissions.',
+      commonMistakes: ['Granting broad access to make the error go away', 'Guessing permissions without checking membership'],
+      options: [
+        { id: 'a', label: 'Reinstall OneDrive on their laptop.' },
+        { id: 'b', label: 'Give them Owner rights on the whole site.' },
+        { id: 'c', label: 'Ask them to clear their browser history.' },
+        { id: 'd', label: 'Check their group membership in Entra ID or the Team owners list.' }
+      ],
+      correctOptionId: 'd',
+      dcsContext: 'Verifying membership first keeps access changes small, correct and easy to explain in the ticket.',
+      reviewSchedule,
+      recommendedModuleId: 'm365-teams-sharepoint-onedrive-basics',
+      weakTopic: 'dcs-teams-sharepoint-onedrive'
     }
   ],
   scenarioPrompts: [

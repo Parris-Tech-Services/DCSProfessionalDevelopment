@@ -103,6 +103,69 @@ export const onboardingModule: TrainingModule = {
       reviewSchedule,
       recommendedModuleId: 'new-user-onboarding-access-checks',
       weakTopic: 'dcs-onboarding'
+    },
+    {
+      type: 'mcq',
+      id: 'onboarding-q2',
+      prompt: 'A new teacher can log in but cannot open the shared staff folder. What is the most likely cause?',
+      domain: 'Operations',
+      difficulty: 'foundation',
+      explanation: 'Missing security group membership in Entra ID is the most common reason for missing file access.',
+      modelAnswer: 'Check the user\'s group memberships in Entra ID against the new-user checklist for their role, and request the missing group rather than guessing a fix.',
+      commonMistakes: ['Reinstalling Office or the laptop image', 'Giving the user a copy of the files by USB'],
+      options: [
+        { id: 'a', label: 'Their laptop needs to be re-imaged.' },
+        { id: 'b', label: 'They are missing a security group membership in Entra ID.' },
+        { id: 'c', label: 'The shared folder has been deleted.' },
+        { id: 'd', label: 'Their password has expired.' }
+      ],
+      correctOptionId: 'b',
+      dcsContext: 'Separating a technical error from access that has not yet been granted saves time on a new starter\'s first day.',
+      reviewSchedule,
+      recommendedModuleId: 'new-user-onboarding-access-checks',
+      weakTopic: 'dcs-onboarding'
+    },
+    {
+      type: 'mcq',
+      id: 'onboarding-q3',
+      prompt: 'A staff member asks you to create an account for a colleague who starts on Monday. Why shouldn\'t you do this manually?',
+      domain: 'Operations',
+      difficulty: 'stretch',
+      explanation: 'Manual creation bypasses the formal HR/Business Office workflow and the security audit.',
+      modelAnswer: 'Politely explain the request must start with the HR/Business Office so the account is approved, audited and assigned the right groups.',
+      commonMistakes: ['Creating the account to be helpful', 'Copying another staff member\'s access'],
+      options: [
+        { id: 'a', label: 'It would take too long.' },
+        { id: 'b', label: 'It bypasses the formal HR/Business Office workflow and security audit.' },
+        { id: 'c', label: 'New staff do not need accounts on day one.' },
+        { id: 'd', label: 'Only students can have accounts created manually.' }
+      ],
+      correctOptionId: 'b',
+      dcsContext: 'Onboarding is a high-visibility process; following the workflow keeps access correct and auditable.',
+      reviewSchedule,
+      recommendedModuleId: 'new-user-onboarding-access-checks',
+      weakTopic: 'dcs-onboarding'
+    },
+    {
+      type: 'mcq',
+      id: 'onboarding-q4',
+      prompt: 'A new user says a change you made in the admin portal has not shown up on their device yet. What is the likely explanation?',
+      domain: 'Operations',
+      difficulty: 'stretch',
+      explanation: 'Sync lag is the delay between a change in the admin portal and it appearing on the user\'s device.',
+      modelAnswer: 'Explain sync lag, confirm the change is correct in the portal, and ask the user to wait or sign out and back in before escalating.',
+      commonMistakes: ['Repeating the change several times', 'Assuming the change failed and escalating immediately'],
+      options: [
+        { id: 'a', label: 'Sync lag between the admin portal and the device.' },
+        { id: 'b', label: 'The user\'s account has been deleted.' },
+        { id: 'c', label: 'The change needs a new laptop.' },
+        { id: 'd', label: 'The Business Office cancelled the request.' }
+      ],
+      correctOptionId: 'a',
+      dcsContext: 'Knowing about sync lag helps you communicate calmly and avoid unnecessary changes.',
+      reviewSchedule,
+      recommendedModuleId: 'new-user-onboarding-access-checks',
+      weakTopic: 'dcs-onboarding'
     }
   ],
   scenarioPrompts: [
