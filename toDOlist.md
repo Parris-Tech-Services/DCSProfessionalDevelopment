@@ -437,7 +437,7 @@ Once scenarios exist, make the app help you create useful artefacts.
 * [X] Website unblock request checklist
 * [X] Teams/SharePoint/OneDrive triage guide
 * [X] Escalation note examples
-* [ ] **UN-20261024-033-0440** “What system owns this issue?” decision tree
+* [x] **UN-20261024-033-0440** “What system owns this issue?” decision tree
 
 **Why:** These create visible value without demanding more permissions.
 
@@ -477,13 +477,13 @@ Again, not deep ownership:
 
 These are important, but after the real DCS support flow exists.
 
-* [ ] **UN-20261024-033-0480** VLANs and guest Wi-Fi segmentation
-* [ ] **UN-20261024-033-0481** Group Policy vs MDM
-* [ ] **UN-20261024-033-0482** Intune/Jamf device management concepts
-* [ ] **UN-20261024-033-0483** Cloud models: SaaS / PaaS / IaaS / DaaS
-* [ ] **UN-20261024-033-0484** Ports and protocols
+* [x] **UN-20261024-033-0480** VLANs and guest Wi-Fi segmentation
+* [x] **UN-20261024-033-0481** Group Policy vs MDM
+* [x] **UN-20261024-033-0482** Intune/Jamf device management concepts
+* [x] **UN-20261024-033-0483** Cloud models: SaaS / PaaS / IaaS / DaaS
+* [x] **UN-20261024-033-0484** Ports and protocols
 * [ ] **UN-20261024-033-0485** Endpoint security basics
-* [ ] **UN-20261024-033-0486** Scripting/automation basics
+* [x] **UN-20261024-033-0486** Scripting/automation basics
 
 **Why:** These help your Level 2 growth, but they should not displace daily support skills.
 
@@ -491,10 +491,10 @@ These are important, but after the real DCS support flow exists.
 
 # P8 — Evidence and PD export
 
-* [ ] **UN-20261024-033-0494** PD log
-* [ ] **UN-20261024-033-0495** monthly summary
-* [ ] **UN-20261024-033-0496** evidence pack
-* [ ] **UN-20261024-033-0497** copy-to-clipboard manager-safe summary
+* [x] **UN-20261024-033-0494** PD log
+* [x] **UN-20261024-033-0495** monthly summary
+* [x] **UN-20261024-033-0496** evidence pack
+* [x] **UN-20261024-033-0497** copy-to-clipboard manager-safe summary
 * [ ] **UN-20261024-033-0498** link modules/scenarios/practical outputs to PD entries
 
 **Why:** Useful, but only once the learning engine has meaningful activity to summarise.
@@ -505,11 +505,11 @@ These are important, but after the real DCS support flow exists.
 
 Keep them, but make them evidence-based.
 
-* [ ] **UN-20261024-033-0508** A+ readiness graph
-* [ ] **UN-20261024-033-0509** Level 2 readiness graph
+* [x] **UN-20261024-033-0508** A+ readiness graph
+* [x] **UN-20261024-033-0509** Level 2 readiness graph
 * [ ] **UN-20261024-033-0510** School IT manager readiness graph
 * [ ] **UN-20261024-033-0511** label unsupported domains as “estimate”
-* [ ] **UN-20261024-033-0512** update scores from actual performance
+* [x] **UN-20261024-033-0512** update scores from actual performance
 
 **Why:** Motivating, but less urgent than real learning loops.
 
@@ -574,7 +574,7 @@ The roadmap is complete only when:
   - practical outputs
   - knowledge-base drafts
   - evidence-pack settings
-- [ ] **UN-20261024-033-0577** Add storage versioning and migration so existing users do not lose progress when the model expands.
+- [x] **UN-20261024-033-0577** Add storage versioning and migration so existing users do not lose progress when the model expands.
 - [ ] **UN-20261024-033-0578** Add privacy-safe metadata fields so content can be tagged as derived from internal DCS resources without copying confidential text.
 - [ ] **UN-20261024-033-0579** Add helper functions for loading, saving, and validating all new progress objects.
 - [ ] **UN-20261024-033-0580** Add tests for schema validation, migrations, and default-state creation.
@@ -597,7 +597,7 @@ Done when:
   - scenario step or scenario prompt
   - practical output
   - review queue
-- [ ] **UN-20261024-033-0600** Add a reusable module progress model that tracks completion by activity type, not only by reading or quiz completion.
+- [x] **UN-20261024-033-0600** Add a reusable module progress model that tracks completion by activity type, not only by reading or quiz completion.
 - [ ] **UN-20261024-033-0601** Show weak areas, due review, and next best action at the top of each module.
 - [ ] **UN-20261024-033-0602** Make explanation content appear after recall attempts or alongside guided reveal, so the flow stays retrieval-first.
 - [ ] **UN-20261024-033-0603** Update module cards and module detail pages to show:
@@ -614,18 +614,18 @@ Done when:
 
 ## 3. Implement the study-technique layer the roadmap depends on
 
-- [ ] **UN-20261024-033-0617** Add Active Recall mode that hides answers until Josh attempts recall.
-- [ ] **UN-20261024-033-0618** Add Feynman prompts with a simple rubric for:
+- [x] **UN-20261024-033-0617** Add Active Recall mode that hides answers until Josh attempts recall.
+- [x] **UN-20261024-033-0618** Add Feynman prompts with a simple rubric for:
   - clarity
   - correctness
   - practical relevance
-- [ ] **UN-20261024-033-0622** Add explicit Leitner-style flashcard boxes or labels on top of the existing spaced-repetition system.
+- [x] **UN-20261024-033-0622** Add explicit Leitner-style flashcard boxes or labels on top of the existing spaced-repetition system.
 - [ ] **UN-20261024-033-0623** Add concept-sorting exercises for symptoms, systems, ownership boundaries, and escalation decisions.
-- [ ] **UN-20261024-033-0624** Add mnemonic-builder prompts for ports, workflows, and system distinctions.
+- [x] **UN-20261024-033-0624** Add mnemonic-builder prompts for ports, workflows, and system distinctions.
 - [ ] **UN-20261024-033-0625** Add Cornell-style guided note templates for module review and scenario debrief.
-- [ ] **UN-20261024-033-0626** Add SQ3R-style reading companion prompts for safely turning internal resources into questions and summaries.
+- [x] **UN-20261024-033-0626** Add SQ3R-style reading companion prompts for safely turning internal resources into questions and summaries.
 - [ ] **UN-20261024-033-0627** Add micro-learning task cards that fit short quiet windows.
-- [ ] **UN-20261024-033-0628** Add a Pomodoro-style timer tied to one learning task.
+- [x] **UN-20261024-033-0628** Add a Pomodoro-style timer tied to one learning task.
 - [ ] **UN-20261024-033-0629** Add end-of-session prompts:
   - What did I learn?
   - Where would this show up at DCS?
@@ -640,26 +640,26 @@ Done when:
 
 For every new module below, complete all of these sub-items:
 
-- [ ] **UN-20261024-033-0643** Write 3 to 5 short lessons.
-- [ ] **UN-20261024-033-0644** Add at least 10 flashcards.
-- [ ] **UN-20261024-033-0645** Add at least 8 mixed assessment items.
-- [ ] **UN-20261024-033-0646** Add at least 1 scenario prompt or embedded scenario step.
-- [ ] **UN-20261024-033-0647** Add at least 1 practical output.
+- [x] **UN-20261024-033-0643** Write 3 to 5 short lessons.
+- [x] **UN-20261024-033-0644** Add at least 10 flashcards.
+- [x] **UN-20261024-033-0645** Add at least 8 mixed assessment items.
+- [x] **UN-20261024-033-0646** Add at least 1 scenario prompt or embedded scenario step.
+- [x] **UN-20261024-033-0647** Add at least 1 practical output.
 - [ ] **UN-20261024-033-0648** Add ownership-boundary notes showing what belongs to ICT, admin, leadership, or another system owner.
 - [ ] **UN-20261024-033-0649** Add a privacy-safe example of good ticket or escalation wording.
 
 Required new modules:
 
-- [ ] **UN-20261024-033-0653** 4.1 `Parent Portal Registration`
-- [ ] **UN-20261024-033-0654** 4.2 `Parent Portal Details Updates`
-- [ ] **UN-20261024-033-0655** 4.3 `Sentral Support`
-- [ ] **UN-20261024-033-0656** 4.4 `OurDCS / Schoolbox Support`
-- [ ] **UN-20261024-033-0657** 4.5 `Login, Password, Lockout, MFA, and Self-Service Recovery`
-- [ ] **UN-20261024-033-0658** 4.6 `Permissions, Shared Drives, and Access Requests`
-- [ ] **UN-20261024-033-0659** 4.7 `Website Filtering and Unblock Request Triage`
-- [ ] **UN-20261024-033-0660** 4.8 `New User Onboarding and Missing-Access Checks`
-- [ ] **UN-20261024-033-0661** 4.9 `Teams, SharePoint, and OneDrive Support Basics`
-- [ ] **UN-20261024-033-0662** 4.10 `iPad and Jamf Workflow Basics`
+- [x] **UN-20261024-033-0653** 4.1 `Parent Portal Registration`
+- [x] **UN-20261024-033-0654** 4.2 `Parent Portal Details Updates`
+- [x] **UN-20261024-033-0655** 4.3 `Sentral Support`
+- [x] **UN-20261024-033-0656** 4.4 `OurDCS / Schoolbox Support`
+- [x] **UN-20261024-033-0657** 4.5 `Login, Password, Lockout, MFA, and Self-Service Recovery`
+- [x] **UN-20261024-033-0658** 4.6 `Permissions, Shared Drives, and Access Requests`
+- [x] **UN-20261024-033-0659** 4.7 `Website Filtering and Unblock Request Triage`
+- [x] **UN-20261024-033-0660** 4.8 `New User Onboarding and Missing-Access Checks`
+- [x] **UN-20261024-033-0661** 4.9 `Teams, SharePoint, and OneDrive Support Basics`
+- [x] **UN-20261024-033-0662** 4.10 `iPad and Jamf Workflow Basics`
 
 Done when:
 
@@ -668,12 +668,12 @@ Done when:
 
 ## 5. Deepen the existing modules so they teach real DCS work better
 
-- [ ] **UN-20261024-033-0671** Expand `DCS IT Support Foundations` with:
+- [x] **UN-20261024-033-0671** Expand `DCS IT Support Foundations` with:
   - multi-campus context
   - role boundaries
   - internal workflow/source awareness
   - safe escalation rules
-- [ ] **UN-20261024-033-0676** Expand `Printer Troubleshooting` with:
+- [x] **UN-20261024-033-0676** Expand `Printer Troubleshooting` with:
   - PaperCut / Follow-Me release
   - photocopier faults
   - queue-vs-device reasoning
@@ -706,11 +706,11 @@ Done when:
   - security filtering
   - printer deployment
   - work-profile and managed-data concepts
-- [ ] **UN-20261024-033-0709** Expand `VLANs and Network Segmentation` with:
+- [x] **UN-20261024-033-0709** Expand `VLANs and Network Segmentation` with:
   - guest internet-only patterns
   - source-destination rule writing
   - staff/student/printer access examples
-- [ ] **UN-20261024-033-0713** Expand `Cloud Models: SaaS, PaaS, IaaS, and DaaS` with:
+- [x] **UN-20261024-033-0713** Expand `Cloud Models: SaaS, PaaS, IaaS, and DaaS` with:
   - school support use cases
   - DaaS vs local install trade-offs
   - BYOD application scenarios
@@ -725,7 +725,7 @@ Done when:
 
 ## 6. Expand the strict assessment bank to roadmap level
 
-- [ ] **UN-20261024-033-0728** Raise the total strict question bank to at least 80 scored items.
+- [x] **UN-20261024-033-0728** Raise the total strict question bank to at least 80 scored items.
 - [ ] **UN-20261024-033-0729** Ensure every Tier 1 module has at least 8 scored items.
 - [ ] **UN-20261024-033-0730** Ensure every expanded technical module has enough questions to test real application, not just definitions.
 - [ ] **UN-20261024-033-0731** Include all required question types:
@@ -735,10 +735,10 @@ Done when:
   - scenario response
   - reflection
 - [X] Require confidence rating before every scored answer.
-- [ ] **UN-20261024-033-0738** Store correctness, reasoning, judgement, and next review outcome for every attempt.
-- [ ] **UN-20261024-033-0739** Add model answers and self-rating rubrics where auto-marking is not possible.
+- [x] **UN-20261024-033-0738** Store correctness, reasoning, judgement, and next review outcome for every attempt.
+- [x] **UN-20261024-033-0739** Add model answers and self-rating rubrics where auto-marking is not possible.
 - [X] Add plausible distractors only.
-- [ ] **UN-20261024-033-0741** Add mixed-domain drills so weak topics get revisited in different contexts.
+- [x] **UN-20261024-033-0741** Add mixed-domain drills so weak topics get revisited in different contexts.
 - [ ] **UN-20261024-033-0742** Add tests for scoring logic, confidence capture, and review-scheduling output.
 
 Done when:
@@ -752,7 +752,7 @@ Done when:
   - no internet in classroom
   - staff offboarding and M365 access
   - ViewBoard display issue
-- [ ] **UN-20261024-033-0755** Add the 10 roadmap scenarios:
+- [x] **UN-20261024-033-0755** Add the 10 roadmap scenarios:
   - HDMI works but no audio
   - student laptop has 169.254 IP
   - printer jobs stuck in queue
@@ -770,7 +770,7 @@ Done when:
   - an ideal troubleshooting path
   - a risk/privacy note
   - a model answer summary
-- [ ] **UN-20261024-033-0773** Require a Jira-style note at the end of every scenario.
+- [x] **UN-20261024-033-0773** Require a Jira-style note at the end of every scenario.
 - [ ] **UN-20261024-033-0774** Add note scoring against:
   - who / where / device
   - exact symptom
@@ -779,8 +779,8 @@ Done when:
   - urgency / impact
   - next action
   - privacy-safe wording
-- [ ] **UN-20261024-033-0782** Store scenario attempts, note scores, and revisit flags in localStorage.
-- [ ] **UN-20261024-033-0783** Add due-review hooks so missed scenario decisions come back later.
+- [x] **UN-20261024-033-0782** Store scenario attempts, note scores, and revisit flags in localStorage.
+- [x] **UN-20261024-033-0783** Add due-review hooks so missed scenario decisions come back later.
 - [ ] **UN-20261024-033-0784** Add tests for scenario progression, note-scoring math, and revisit scheduling.
 
 Done when:
@@ -790,13 +790,13 @@ Done when:
 
 ## 8. Upgrade Due Today, spaced repetition, and the Error Log
 
-- [ ] **UN-20261024-033-0793** Merge flashcards, missed questions, weak scenario steps, and note-writing weak points into one due-review system.
+- [x] **UN-20261024-033-0793** Merge flashcards, missed questions, weak scenario steps, and note-writing weak points into one due-review system.
 - [ ] **UN-20261024-033-0794** Show due items by:
   - topic
   - system
   - difficulty
   - review type
-- [ ] **UN-20261024-033-0799** Add Leitner-style box visibility for flashcards.
+- [x] **UN-20261024-033-0799** Add Leitner-style box visibility for flashcards.
 - [ ] **UN-20261024-033-0800** Keep Again / Hard / Good / Easy scheduling but map it clearly to due dates and box movement.
 - [ ] **UN-20261024-033-0801** Improve the Error Log so every entry shows:
   - what Josh answered
@@ -820,7 +820,7 @@ Done when:
 
 ## 9. Build the quiet-window workflow and focus modes
 
-- [ ] **UN-20261024-033-0823** Add `Start tiny` mode.
+- [x] **UN-20261024-033-0823** Add `Start tiny` mode.
 - [x] Add `20-minute focus block` mode.
 - [ ] **UN-20261024-033-0825** Add `I'm overwhelmed` mode with three simple actions.
 - [ ] **UN-20261024-033-0826** Add one-click quick starts from the dashboard for:
@@ -831,7 +831,7 @@ Done when:
   - readiness view
 - [ ] **UN-20261024-033-0832** Add ticket-theme-weighted recommendations based on weak areas and due items.
 - [ ] **UN-20261024-033-0833** Add a single-task session view that removes extra clutter during focused practice.
-- [ ] **UN-20261024-033-0834** Add end-of-session reflection capture.
+- [x] **UN-20261024-033-0834** Add end-of-session reflection capture.
 - [ ] **UN-20261024-033-0835** Add tests for recommendation logic and task-mode routing.
 
 Done when:
@@ -841,7 +841,7 @@ Done when:
 
 ## 10. Build the practical-output and Knowledge Base Lab workflow
 
-- [ ] **UN-20261024-033-0844** Add practical-output templates for:
+- [x] **UN-20261024-033-0844** Add practical-output templates for:
   - Parent Portal registration guide
   - Parent Portal detail-update guide
   - password-reset guide
@@ -854,8 +854,8 @@ Done when:
   - iPad / Jamf first-response checklist
   - printer symptom matrix
   - classroom AV quick-fix flow
-- [ ] **UN-20261024-033-0857** Add a `/knowledge-base-lab` route.
-- [ ] **UN-20261024-033-0858** Build a workflow for turning repeated ticket themes into OurDCS-ready draft articles.
+- [x] **UN-20261024-033-0857** Add a `/knowledge-base-lab` route.
+- [x] **UN-20261024-033-0858** Build a workflow for turning repeated ticket themes into OurDCS-ready draft articles.
 - [ ] **UN-20261024-033-0859** Add a rubric for article quality:
   - clear title
   - correct audience
@@ -863,7 +863,7 @@ Done when:
   - brevity
   - safety/privacy
   - likely deflection value
-- [ ] **UN-20261024-033-0866** Store drafts locally and allow Markdown export.
+- [x] **UN-20261024-033-0866** Store drafts locally and allow Markdown export.
 - [ ] **UN-20261024-033-0867** Link module practical outputs into the Knowledge Base Lab.
 
 Done when:
@@ -892,10 +892,10 @@ Done when:
   - current weak areas
   - suggested next focus
 - [x] Add `/evidence-pack`.
-- [ ] **UN-20261024-033-0895** Generate a manager-safe Markdown summary from localStorage.
-- [ ] **UN-20261024-033-0896** Include certificate/link placeholders without requiring external systems.
-- [ ] **UN-20261024-033-0897** Add copy-to-clipboard support.
-- [ ] **UN-20261024-033-0898** Add privacy reminders that exclude confidential ticket, student, staff, or network details.
+- [x] **UN-20261024-033-0895** Generate a manager-safe Markdown summary from localStorage.
+- [x] **UN-20261024-033-0896** Include certificate/link placeholders without requiring external systems.
+- [x] **UN-20261024-033-0897** Add copy-to-clipboard support.
+- [x] **UN-20261024-033-0898** Add privacy reminders that exclude confidential ticket, student, staff, or network details.
 
 Done when:
 
@@ -921,7 +921,7 @@ Done when:
 
 ## 13. Build the internal-resource companion workflow
 
-- [ ] **UN-20261024-033-0924** Add a content-author workflow for safely converting internal DCS knowledge into app content.
+- [x] **UN-20261024-033-0924** Add a content-author workflow for safely converting internal DCS knowledge into app content.
 - [ ] **UN-20261024-033-0925** Create a source-intake template that captures:
   - source area
   - system
@@ -937,8 +937,8 @@ Done when:
   - write questions
   - write scenario
   - write practical output
-- [ ] **UN-20261024-033-0940** Add author notes or internal docs for using Teams posts, Sentral training, OurDCS guides, and local SOPs as source material without copying them verbatim.
-- [ ] **UN-20261024-033-0941** Link this workflow from repo docs so future content work stays aligned.
+- [x] **UN-20261024-033-0940** Add author notes or internal docs for using Teams posts, Sentral training, OurDCS guides, and local SOPs as source material without copying them verbatim.
+- [x] **UN-20261024-033-0941** Link this workflow from repo docs so future content work stays aligned.
 
 Done when:
 
@@ -983,82 +983,82 @@ Done when:
 
 ## P0: Real DCS Ticket Relevance
 
-- [ ] **UN-20261024-033-0986** Add `Parent Portal Registration` module with access-key flow, common blockers, escalation boundaries, and parent-facing note examples.
-- [ ] **UN-20261024-033-0987** Add `Parent Portal Details Updates` module covering family amendment requests, urgent exceptions, and admin handoff.
-- [ ] **UN-20261024-033-0988** Add `Sentral Support` module covering markbook visibility, parent access keys, reporting-period issues, and safe escalation.
-- [ ] **UN-20261024-033-0989** Add `OurDCS / Schoolbox Support` module covering class pages, staff workflow issues, and portal/LMS triage boundaries.
-- [ ] **UN-20261024-033-0990** Add `Login and Password Support` module covering username checks, lockouts, expired passwords, self-service reset, and compromise suspicion.
-- [ ] **UN-20261024-033-0991** Add `Permissions and Access Requests` module covering shared drives, software access, approvals, role context, and least privilege.
-- [ ] **UN-20261024-033-0992** Add `Website Filtering and Unblock Requests` module covering capture of block details, justification, lead time, and workflow.
-- [ ] **UN-20261024-033-0993** Add `New User Onboarding` module covering staff, student, and prac-teacher request completeness and day-one validation.
-- [ ] **UN-20261024-033-0994** Add `Teams, SharePoint, and OneDrive Support` module covering common access, sync, sharing, and ownership issues at Level 1 scope.
-- [ ] **UN-20261024-033-0995** Add `iPad and Jamf Workflow Basics` module covering first-line triage, ownership boundaries, and evidence capture.
+- [x] **UN-20261024-033-0986** Add `Parent Portal Registration` module with access-key flow, common blockers, escalation boundaries, and parent-facing note examples.
+- [x] **UN-20261024-033-0987** Add `Parent Portal Details Updates` module covering family amendment requests, urgent exceptions, and admin handoff.
+- [x] **UN-20261024-033-0988** Add `Sentral Support` module covering markbook visibility, parent access keys, reporting-period issues, and safe escalation.
+- [x] **UN-20261024-033-0989** Add `OurDCS / Schoolbox Support` module covering class pages, staff workflow issues, and portal/LMS triage boundaries.
+- [x] **UN-20261024-033-0990** Add `Login and Password Support` module covering username checks, lockouts, expired passwords, self-service reset, and compromise suspicion.
+- [x] **UN-20261024-033-0991** Add `Permissions and Access Requests` module covering shared drives, software access, approvals, role context, and least privilege.
+- [x] **UN-20261024-033-0992** Add `Website Filtering and Unblock Requests` module covering capture of block details, justification, lead time, and workflow.
+- [x] **UN-20261024-033-0993** Add `New User Onboarding` module covering staff, student, and prac-teacher request completeness and day-one validation.
+- [x] **UN-20261024-033-0994** Add `Teams, SharePoint, and OneDrive Support` module covering common access, sync, sharing, and ownership issues at Level 1 scope.
+- [x] **UN-20261024-033-0995** Add `iPad and Jamf Workflow Basics` module covering first-line triage, ownership boundaries, and evidence capture.
 
 ## P0: Deepen Existing High-Frequency Themes
 
-- [ ] **UN-20261024-033-0999** Expand `Printer Troubleshooting` with PaperCut / Follow-Me release, photocopier faults, queue-vs-device reasoning, and service-call handoff.
+- [x] **UN-20261024-033-0999** Expand `Printer Troubleshooting` with PaperCut / Follow-Me release, photocopier faults, queue-vs-device reasoning, and service-call handoff.
 - [ ] **UN-20261024-033-1000** Expand `Classroom Display and ViewBoard Troubleshooting` with projector inputs, Windows+P, audio-path faults, SMART/touch calibration, and lamp/thermal issues.
-- [ ] **UN-20261024-033-1001** Expand `DNS, DHCP, Gateway, and IP Basics` with Wi-Fi onboarding, SSID mistakes, signal checks, forget/rejoin, and cross-device comparison.
-- [ ] **UN-20261024-033-1002** Expand `DCS IT Support Foundations` with multi-campus context, role boundaries, and where DCS workflow knowledge usually lives internally.
+- [x] **UN-20261024-033-1001** Expand `DNS, DHCP, Gateway, and IP Basics` with Wi-Fi onboarding, SSID mistakes, signal checks, forget/rejoin, and cross-device comparison.
+- [x] **UN-20261024-033-1002** Expand `DCS IT Support Foundations` with multi-campus context, role boundaries, and where DCS workflow knowledge usually lives internally.
 
 ## P0: Retrieval-First Learning Design
 
 - [X] Rework module structure so each topic starts with questions before explanatory reading.
-- [ ] **UN-20261024-033-1007** Define a standard module pattern: diagnostic questions, flashcards, short-answer retrieval, explain-it-simply prompt, scenario, and practical output.
+- [x] **UN-20261024-033-1007** Define a standard module pattern: diagnostic questions, flashcards, short-answer retrieval, explain-it-simply prompt, scenario, and practical output.
 - [ ] **UN-20261024-033-1008** Make flashcards and practice questions the primary way to learn DCS workflow areas that come from internal resources.
-- [ ] **UN-20261024-033-1009** Add explicit support for converting internal DCS workflow knowledge into safe app prompts without copying sensitive documents into the repo.
+- [x] **UN-20261024-033-1009** Add explicit support for converting internal DCS workflow knowledge into safe app prompts without copying sensitive documents into the repo.
 
 ## P1: Stronger Scenario Lab
 
-- [ ] **UN-20261024-033-1013** Add scenario: HDMI works but no audio.
-- [ ] **UN-20261024-033-1014** Add scenario: student laptop has 169.254 IP.
-- [ ] **UN-20261024-033-1015** Add scenario: printer jobs stuck in queue.
-- [ ] **UN-20261024-033-1016** Add scenario: laser printer toner rubs off.
-- [ ] **UN-20261024-033-1017** Add scenario: guest Wi-Fi segmentation rules.
-- [ ] **UN-20261024-033-1018** Add scenario: phishing email reported by staff.
-- [ ] **UN-20261024-033-1019** Add scenario: Parent Portal registration problem.
-- [ ] **UN-20261024-033-1020** Add scenario: Sentral access-key or markbook issue.
-- [ ] **UN-20261024-033-1021** Add scenario: password lockout or self-service reset failure.
-- [ ] **UN-20261024-033-1022** Add scenario: new user onboarding with missing system access.
-- [ ] **UN-20261024-033-1023** Require a Jira-style escalation note at the end of every scenario.
-- [ ] **UN-20261024-033-1024** Score scenario notes with a rubric for symptom clarity, scope, steps tried, urgency, and privacy-safe wording.
+- [x] **UN-20261024-033-1013** Add scenario: HDMI works but no audio.
+- [x] **UN-20261024-033-1014** Add scenario: student laptop has 169.254 IP.
+- [x] **UN-20261024-033-1015** Add scenario: printer jobs stuck in queue.
+- [x] **UN-20261024-033-1016** Add scenario: laser printer toner rubs off.
+- [x] **UN-20261024-033-1017** Add scenario: guest Wi-Fi segmentation rules.
+- [x] **UN-20261024-033-1018** Add scenario: phishing email reported by staff.
+- [x] **UN-20261024-033-1019** Add scenario: Parent Portal registration problem.
+- [x] **UN-20261024-033-1020** Add scenario: Sentral access-key or markbook issue.
+- [x] **UN-20261024-033-1021** Add scenario: password lockout or self-service reset failure.
+- [x] **UN-20261024-033-1022** Add scenario: new user onboarding with missing system access.
+- [x] **UN-20261024-033-1023** Require a Jira-style escalation note at the end of every scenario.
+- [x] **UN-20261024-033-1024** Score scenario notes with a rubric for symptom clarity, scope, steps tried, urgency, and privacy-safe wording.
 
 ## P1: Stronger Assessment Engine
 
-- [ ] **UN-20261024-033-1028** Expand the strict question bank to 80+ questions with plausible distractors.
-- [ ] **UN-20261024-033-1029** Weight new questions toward the actual top DCS enquiry themes, not just networking concepts.
+- [x] **UN-20261024-033-1028** Expand the strict question bank to 80+ questions with plausible distractors.
+- [x] **UN-20261024-033-1029** Weight new questions toward the actual top DCS enquiry themes, not just networking concepts.
 - [ ] **UN-20261024-033-1030** Add more Analyse / Evaluate / Create style questions.
-- [ ] **UN-20261024-033-1031** Add more free-response and order-the-steps items for access requests, onboarding, Sentral, and password support.
-- [ ] **UN-20261024-033-1032** Revisit weak topics later in mixed contexts instead of only re-asking same-topic items.
-- [ ] **UN-20261024-033-1033** Add Feynman-style explain-back prompts to every major module area.
+- [x] **UN-20261024-033-1031** Add more free-response and order-the-steps items for access requests, onboarding, Sentral, and password support.
+- [x] **UN-20261024-033-1032** Revisit weak topics later in mixed contexts instead of only re-asking same-topic items.
+- [x] **UN-20261024-033-1033** Add Feynman-style explain-back prompts to every major module area.
 - [ ] **UN-20261024-033-1034** Add concept-sorting exercises for systems, symptoms, and ownership boundaries.
-- [ ] **UN-20261024-033-1035** Add mnemonic and memory-sheet prompts for ports, processes, and platform distinctions.
+- [x] **UN-20261024-033-1035** Add mnemonic and memory-sheet prompts for ports, processes, and platform distinctions.
 - [ ] **UN-20261024-033-1036** Add guided Cornell-style reflection prompts at the end of study blocks.
-- [ ] **UN-20261024-033-1037** Add SQ3R-style support for turning internal readings into questions and summaries.
+- [x] **UN-20261024-033-1037** Add SQ3R-style support for turning internal readings into questions and summaries.
 
 ## P1: Deeper Technical Judgement
 
 - [ ] **UN-20261024-033-1041** Deepen M365 / Entra / Intune content with sign-in blocking, session revocation, sign-in logs, MFA, shared mailbox cleanup, and managed mobile retire/wipe concepts.
-- [ ] **UN-20261024-033-1042** Deepen Group Policy content with startup, sign-in, background refresh, OU placement, security filtering, drive mapping, and printer deployment.
-- [ ] **UN-20261024-033-1043** Deepen VLAN content with source-destination allow/block rule writing and guest-internet-only designs.
-- [ ] **UN-20261024-033-1044** Deepen cloud content with DaaS / hosted-desktop school scenarios and BYOD trade-off reasoning.
+- [x] **UN-20261024-033-1042** Deepen Group Policy content with startup, sign-in, background refresh, OU placement, security filtering, drive mapping, and printer deployment.
+- [x] **UN-20261024-033-1043** Deepen VLAN content with source-destination allow/block rule writing and guest-internet-only designs.
+- [x] **UN-20261024-033-1044** Deepen cloud content with DaaS / hosted-desktop school scenarios and BYOD trade-off reasoning.
 
 ## P2: Support-Quality Outputs
 
-- [ ] **UN-20261024-033-1048** Add practical output templates for Parent Portal, Sentral, login help, Wi-Fi onboarding, unblock requests, and onboarding checklists.
-- [ ] **UN-20261024-033-1049** Add a self-service article authoring workflow so repeated ticket themes can become OurDCS-ready content.
-- [ ] **UN-20261024-033-1050** Add a knowledge-base or SOP practice route for writing support articles, not just notes.
+- [x] **UN-20261024-033-1048** Add practical output templates for Parent Portal, Sentral, login help, Wi-Fi onboarding, unblock requests, and onboarding checklists.
+- [x] **UN-20261024-033-1049** Add a self-service article authoring workflow so repeated ticket themes can become OurDCS-ready content.
+- [x] **UN-20261024-033-1050** Add a knowledge-base or SOP practice route for writing support articles, not just notes.
 
 ## P2: Remaining Backlog From `_Jira analysis.txt`
 
-- [ ] **UN-20261024-033-1054** Add `/evidence-pack`.
-- [ ] **UN-20261024-033-1055** Add `Start tiny`.
-- [ ] **UN-20261024-033-1056** Add `20-minute focus block`.
+- [x] **UN-20261024-033-1054** Add `/evidence-pack`.
+- [x] **UN-20261024-033-1055** Add `Start tiny`.
+- [x] **UN-20261024-033-1056** Add `20-minute focus block`.
 - [ ] **UN-20261024-033-1057** Add `I'm overwhelmed` mode.
-- [ ] **UN-20261024-033-1058** Add end-of-session reflection prompts.
+- [x] **UN-20261024-033-1058** Add end-of-session reflection prompts.
 - [ ] **UN-20261024-033-1059** Improve readiness scoring so more domains are based on real evidence rather than light estimates.
-- [ ] **UN-20261024-033-1060** Add explicit Leitner-style flashcard buckets or box labels on top of the current spaced repetition flow.
-- [ ] **UN-20261024-033-1061** Add a Pomodoro-style study timer tied to one clear task.
+- [x] **UN-20261024-033-1060** Add explicit Leitner-style flashcard buckets or box labels on top of the current spaced repetition flow.
+- [x] **UN-20261024-033-1061** Add a Pomodoro-style study timer tied to one clear task.
 - [ ] **UN-20261024-033-1062** Add micro-learning task cards sized for short quiet windows, with one question set or one workflow at a time.
 
 ## Guardrails
@@ -1075,17 +1075,17 @@ Done when:
 
 Features to move DCS Prep from a local tool to a professional-grade learning platform.
 
-* [ ] **UN-20261024-033-1078** **Soft Skills Integration (LinkedIn Learning style)**:
+* [x] **UN-20261024-033-1078** **Soft Skills Integration (LinkedIn Learning style)**:
     * Add "Soft Skills for DCS Support" module covering empathy, de-escalation, and clear communication with staff/students.
-* [ ] **UN-20261024-033-1080** **Gamified Reinforcement (Axonify/Sololearn style)**:
+* [x] **UN-20261024-033-1080** **Gamified Reinforcement (Axonify/Sololearn style)**:
     * [x] Implement a "Daily Streak" counter on the dashboard.
     * [x] Add local-first points and task badges for completed learning work.
     * [x] Add "Bite-Sized Daily Challenge" (a single 1-minute MCQ) that resets every 24 hours.
-* [ ] **UN-20261024-033-1084** **Interactive Learning (Coursera/Sololearn style)**:
+* [x] **UN-20261024-033-1084** **Interactive Learning (Coursera/Sololearn style)**:
     * Add an "In-App Playground" for running basic Python snippets and HTML/CSS previews related to DCS tasks.
-* [ ] **UN-20261024-033-1086** **Structured Learning Paths (O'Reilly/Udacity style)**:
+* [x] **UN-20261024-033-1086** **Structured Learning Paths (O'Reilly/Udacity style)**:
     * Group modules into "Career Paths" (e.g., "DCS Network Specialist", "Security Guard", "Classroom Tech Master").
-* [ ] **UN-20261024-033-1088** **Project-Based Mastery (Udacity style)**:
+* [x] **UN-20261024-033-1088** **Project-Based Mastery (Udacity style)**:
     * Add "Final Projects" for each path that require creating a complex artifact (e.g., a full school-wide Wi-Fi audit plan).
 * [ ] **UN-20261024-033-1090** **Micro-Learning Optimization (EdApp style)**:
     * Conduct a "One-Thumb" UI audit to ensure every page is perfectly usable on a mobile phone during a 2-minute quiet window.

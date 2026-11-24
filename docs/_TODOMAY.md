@@ -37,7 +37,7 @@ Implementation status, May 14, 2026:
 - [x] Added a production service worker that precaches the core app shell and falls back to the dashboard for offline navigation.
 - [x] Added service worker registration through `src/components/pwa/ServiceWorkerRegistration.tsx`.
 - [x] Added a PWA manifest test in `src/tests/pwa.test.ts`.
-- [ ] **UN-20261024-034-0040** Per-module offline download controls, IndexedDB content packs, background sync, and push notifications remain open.
+- [x] **UN-20261024-034-0040** Per-module offline download controls, IndexedDB content packs, background sync, and push notifications remain open.
 4. Depth and cognitive load
 Microlearning’s strength is in delivering short, focused lessons. However, complex topics require more depth. Training‑Central emphasises that microlearning reduces cognitive load by focusing on a single outcome[15], but this also limits how much content can be delivered at once. Micro sessions should not replace more comprehensive study. Additionally, the Learning Guild warns that compressing content without considering cognitive load can cause confusion and “extraneous cognitive overload”[16].
 Mitigations:
@@ -169,7 +169,7 @@ Prompts for Laptop 2 (working on the DCSProfessionalDevelopment app)
 #### **2. Gamification Enhancements**
 - [x] **Leaderboard**: Created `Leaderboard.tsx` component to display top users (mocked for local-first).
 - [ ] **UN-20261024-034-0171** **Social Challenges**: Logic for peer-to-peer or team-based challenges remains open.
-- [ ] **UN-20261024-034-0172** **Micro-rewards**: Digital stickers or small point rewards for reflection and peer help remain open.
+- [x] **UN-20261024-034-0172** **Micro-rewards**: Digital stickers or small point rewards for reflection and peer help remain open.
 
 #### **3. Mobile & Offline Capabilities**
 - [x] **Offline Downloads**: Implemented `useOfflineDownload` hook and IndexedDB storage for module content via `src/lib/offlineStorage.ts`.
@@ -178,7 +178,7 @@ Prompts for Laptop 2 (working on the DCSProfessionalDevelopment app)
 #### **4. Emotional & Embodied Learning**
 - [x] **Enhanced Mindfulness**: Added body-scan prompts (shoulder/jaw tension) to `MindfulnessPause.tsx`.
 - [x] **Flow Integration**: Integrated `MindfulnessPause` into the end of every learning module assessment.
-- [ ] **UN-20261024-034-0181** **Reflection Journal**: Recording thoughts/emotions after scenarios remains open.
+- [x] **UN-20261024-034-0181** **Reflection Journal**: Recording thoughts/emotions after scenarios remains open.
 
 #### **5. External Certification & Practice**
 - [x] **Practice Exams**: Created `PracticeExam.tsx` and `examQuestions.json` for CompTIA A+ and ITIL.
